@@ -47069,3 +47069,99 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
 /*# sourceMappingURL=style.css.map */
 
 /* SỬA TỪ ĐÂY y*/
+.icon-muitenxuong{
+    margin-left: 6px;
+    border-radius: 2px;
+    background: white;
+    width: 25px;
+}
+/*modal cho location*/
+.modal-location-box{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity linear;
+}
+.modal-location-box:target{
+    visibility: visible;
+    opacity: 1;
+}
+.overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-location-body{
+    max-width: 400px;
+    position: relative;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.closed-location{
+    position: absolute;
+    top: 2px;
+    right: 6px;
+    
+}
+.closed-location-benngoai{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+}
+.icon-location{
+    padding: 6px;
+    width: 30px;
+}
+.icon-kinhlup{
+    width: 30px;
+}
+.slide-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.slider-4-banner{
+    overflow: hidden;
+    height: 270px;
+    width: 1080px;
+    margin: 0 auto;
+}
+.box-wrap {
+    width: 300%;
+    animation: slideShow 20s infinite;
+}
+.img-hinh{
+    float: left;
+    height: 300px;
+    width: 600px;
+    display: flex;
+}
+@keyframes slideShow{
+    20%{
+        margin-left: 0;
+    }
+    35%{
+        margin-left: -50%;
+    }
+    50%{
+        margin-left: -50%;
+    }
+    65%{
+        margin-left: -105%;
+    }
+    80%{
+        margin-left: -105%;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
