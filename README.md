@@ -1,6 +1,5 @@
 # Web1
 Đồ án web bán hàng<br>
 <br>
-đã bỏ tất cả js chỉ có css và html
-<br>
+có js nhưng không code chức năng tính toán để hoạt động<br>
 chua done
