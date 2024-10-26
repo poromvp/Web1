@@ -989,6 +989,10 @@ template {
     content: ""
 }
 
+.fa-angle-down::before {
+    content: ""
+}
+
 .fa-angle-left::before {
     content: ""
 }
