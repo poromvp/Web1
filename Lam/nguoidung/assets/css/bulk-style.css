@@ -317,9 +317,9 @@
     content: "\e937";
 }
 
-.iconly-Location:before {
-    content: "\e938";
-}
+/*.iconly-Location:before {
+    content: "\f3c5";    
+}*/
 
 .iconly-Lock:before {
     content: "\e939";
@@ -394,7 +394,8 @@
 }
 
 .iconly-Search:before {
-    content: "\e94b";
+    content: "\f34e"; /* Mã Unicode của icon search trong Bootstrap Icons */
+    font-family: "bootstrap-icons" !important;
 }
 
 .iconly-Send:before {

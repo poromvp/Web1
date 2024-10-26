@@ -990,7 +990,7 @@ template {
 }
 
 .fa-angle-down::before {
-    content: ""
+    content: "\f107";
 }
 
 .fa-angle-left::before {
@@ -47069,11 +47069,7 @@ body.rtl .theme-product-section .right-box-contain .license-list .accordion-item
 /*# sourceMappingURL=style.css.map */
 
 
-
-/* SỬA Ở ĐÂY */
+/*HÃY SỬA Ở ĐÂY */
 .p-mart-logo{
-    height: 50px;
-}
-.logo-tabbar{
-    height: 18px;
+    height: 100px;
 }
