@@ -323,9 +323,10 @@
     content: "\e937";
 }
 
-.iconly-Location:before {
-    content: "\e938";
-}
+/*.iconly-Location:before {
+    content: "\f3c5";
+    font-family: "Font Awesome 6 Free";
+}*/
 
 .iconly-Lock:before {
     content: "\e939";
@@ -497,4 +498,16 @@
 
 .iconly-Work:before {
     content: "\e963";
+}
+
+
+
+.icon-location{
+    color: #ede6e6; /* Đặt màu cho icon */
+    font-weight: 100;
+    margin: 5px;
+}
+
+.icon-search{
+    font-size: 20px;
 }
