@@ -32,7 +32,6 @@
 // 22. Category Box js
 // 23. remove notification bar js
 // 24. category box js
-
 (function ($) {
     "use strict";
     /*=====================
