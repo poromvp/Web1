@@ -11,6 +11,7 @@
 .theme-color-3 {
     --theme-color: #9306cf;
     --theme-color-rgb: 35, 150, 152
+    --theme-color3: #9306cf
 }
 
 .theme-color-4 {
@@ -29,7 +30,7 @@
 
 .theme-color-7 {
     --theme-color: #7b4397;
-    --theme-color2: #dc2430
+    --theme-color2: #9306cf
 }
 
 button,
@@ -22927,7 +22928,7 @@ header .header-nav .header-nav-left .dropdown-category {
     -ms-flex-pack: center;
     justify-content: center;
     padding: calc(10px + 5*(100vw - 320px)/1600) calc(16px + 15*(100vw - 320px)/1600);
-    background: var(--theme-color2);
+    background: #9306cf;
     color: #fff;
     border-radius: 5px;
     border: none
