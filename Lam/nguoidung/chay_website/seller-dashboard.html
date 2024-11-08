@@ -1,0 +1,2941 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from themes.pixelstrap.com/fastkart/front-end/seller-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Oct 2024 13:57:22 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fastkart">
+    <meta name="keywords" content="Fastkart">
+    <meta name="author" content="Fastkart">
+    <link rel="icon" href="../assets/images/favicon/logo-tab-bar.png" type="image/x-icon">
+    <title>Sự lựa chọn hoàn hảo</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
+
+    <!-- bootstrap css -->
+    <link id="rtl-link" rel="stylesheet" type="text/css" href="../assets/css/vendors/bootstrap.css">
+
+    <!-- Iconly css -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/bulk-style.css">
+
+    <!-- Template css -->
+    <link id="color-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
+
+    <!-- Icon của Font Awesome copy từ đây nha-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="theme-color-3 dark">
+
+    <!-- Loader Start -->
+    <div class="fullpage-loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Loader End -->
+
+    <!-- Header Start -->
+    <header class="pb-md-4 pb-0">
+        <div class="header-top">
+            <div class="container-fluid-lg">
+                <div class="row">
+                    <div class="col-xxl-3 d-xxl-block d-none">
+                        <div class="top-left-header">
+                            <i class="iconly-Location icli text-white"></i>
+                            <span class="text-white">123 Bình Đông, phường 15, Quận 8, TP Hồ Chí Minh</span>
+                        </div>
+                    </div>
+
+                    <div class="col-xxl-6 col-lg-9 d-lg-block d-none">
+                        <div class="header-offer">
+                            <div class="notification-slider">
+                                <div>
+                                    <div class="timer-notification">
+                                        <h6><strong class="me-1">Chào mừng tới P-Mart!</strong>Gói quà/tặng mới mỗi ngày vào cuối tuần.<strong class="ms-1">Mã giảm giá mới: PM024
+                                            </strong>
+
+                                        </h6>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="timer-notification">
+                                        <h6>Sản phẩm bạn yêu thích hiện đang giảm giá!
+                                            <a href="shop-left-sidebar.html" class="text-white">Mua Ngay
+                                                !</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                        <ul class="about-list right-nav-about">
+                            <li class="right-nav-list">
+                                <div class="dropdown theme-form-select">
+                                    <button class="btn dropdown-toggle" type="button" id="select-language"
+                                        data-bs-toggle="dropdown">
+                                        <img src="../assets/images/country/vietnamese.png"
+                                            class="img-fluid blur-up lazyload" alt="">
+                                        <span>Tiếng Việt</span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <a class="dropdown-item" href="javascript:void(0)" id="english">
+                                                <img src="../assets/images/country/united-kingdom.png"
+                                                    class="img-fluid blur-up lazyload" alt="">
+                                                <span>English UK</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="javascript:void(0)" id="english">
+                                                <img src="../assets/images/country/united-states.png"
+                                                    class="img-fluid blur-up lazyload" alt="">
+                                                <span>English US</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="javascript:void(0)" id="france">
+                                                <img src="../assets/images/country/germany.png"
+                                                    class="img-fluid blur-up lazyload" alt="">
+                                                <span>Germany</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="javascript:void(0)" id="chinese">
+                                                <img src="../assets/images/country/turkish.png"
+                                                    class="img-fluid blur-up lazyload" alt="">
+                                                <span>Turki</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="right-nav-list">
+                                <div class="dropdown theme-form-select">
+                                    <button class="btn dropdown-toggle" type="button" id="select-dollar"
+                                        data-bs-toggle="dropdown">
+                                        <span>VND</span>
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end sm-dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" id="aud" href="javascript:void(0)">AUD</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" id="eur" href="javascript:void(0)">EUR</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" id="cny" href="javascript:void(0)">CNY</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" id="usd" href="javascript:void(0)">USD</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-nav top-header sticky-header">
+            <div class="container-fluid-lg">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="navbar-top">
+                            <button class="navbar-toggler d-xl-none d-inline navbar-menu-button" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#primaryMenu">
+                                <span class="navbar-toggler-icon">
+                                    <i class="fa-solid fa-bars"></i>
+                                </span>
+                            </button>
+                            <a href="index-5.html" class="web-logo nav-logo">
+                                <img src="../assets/images/logo/p-mart-logo.png" class="img-fluid blur-up lazyload" alt="">
+                            </a>
+
+                            <div class="middle-box">
+                                <div class="location-box">
+                                    <button class="btn location-button" data-bs-toggle="modal"
+                                        data-bs-target="#locationModal">
+                                        <span class="location-arrow">
+                                            <i data-feather="map-pin"></i>
+                                        </span>
+                                        <span class="locat-name">Vị Trí</span>
+                                        <i class="fa-solid fa-angle-down"></i>
+                                    </button>
+                                </div>
+
+                                <div class="search-box">
+                                    <div class="input-group">
+                                        <input type="search" class="form-control" placeholder="Tìm kiếm những sản phẩm khác...">
+                                        <button class="btn" type="button" id="button-addon2">
+                                            <a href="search.html" style="text-decoration: none; position: absolute; padding: 30px 30px"></a>
+                                            <i data-feather="search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="rightside-box">
+                                <div class="search-full">
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i data-feather="search" class="font-light"></i>
+                                        </span>
+                                        <input type="text" class="form-control search-type" placeholder="Search here..">
+                                        <span class="input-group-text close-search">
+                                            <i data-feather="x" class="font-light"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <ul class="right-side-menu">
+                                    <li class="right-side">
+                                        <div class="delivery-login-box">
+                                            <div class="delivery-icon">
+                                                <div class="search-box">
+                                                    <i data-feather="search"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="right-side">
+                                        <a href="contact-us.html" class="delivery-login-box">
+                                            <div class="delivery-icon">
+                                                <i data-feather="phone-call"></i>
+                                            </div>
+                                            <div class="delivery-detail">
+                                                <h6>Vận chuyển 24/7</h6>
+                                                <h5>+(123) 456 7890</h5>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="right-side">
+                                        <a href="wishlist.html" class="btn p-0 position-relative header-wishlist">
+                                            <i data-feather="heart"></i>
+                                        </a>
+                                    </li>
+                                    <li class="right-side">
+                                        <div class="onhover-dropdown header-badge">
+                                            <button type="button" class="btn p-0 position-relative header-wishlist">
+                                                <i data-feather="shopping-cart"></i>
+                                                <span class="position-absolute top-0 start-100 translate-middle badge">2
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </button>
+
+                                            <div class="onhover-div">
+                                                <ul class="cart-list">
+                                                    <li class="product-box-contain">
+                                                        <div class="drop-cart">
+                                                            <a href="product-left-thumbnail.html" class="drop-image">
+                                                                <img src="../assets/images/vegetable/product/1.png"
+                                                                    class="blur-up lazyload" alt="">
+                                                            </a>
+
+                                                            <div class="drop-contain">
+                                                                <a href="product-left-thumbnail.html">
+                                                                    <h5>Fantasy Crunchy Choco Chip Cookies</h5>
+                                                                </a>
+                                                                <h6><span>1 x</span> $80.58</h6>
+                                                                <button class="close-button close_button">
+                                                                    <i class="fa-solid fa-xmark"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+
+                                                    <li class="product-box-contain">
+                                                        <div class="drop-cart">
+                                                            <a href="product-left-thumbnail.html" class="drop-image">
+                                                                <img src="../assets/images/vegetable/product/2.png"
+                                                                    class="blur-up lazyload" alt="">
+                                                            </a>
+
+                                                            <div class="drop-contain">
+                                                                <a href="product-left-thumbnail.html">
+                                                                    <h5>Peanut Butter Bite Premium Butter Cookies 600 g
+                                                                    </h5>
+                                                                </a>
+                                                                <h6><span>1 x</span> $25.68</h6>
+                                                                <button class="close-button close_button">
+                                                                    <i class="fa-solid fa-xmark"></i>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="price-box">
+                                                    <h5>Tổng cộng :</h5>
+                                                    <h4 class="theme-color fw-bold">$106.58</h4>
+                                                </div>
+
+                                                <div class="button-group">
+                                                    <a href="cart.html" class="btn btn-sm cart-button">Xem giỏ hàng</a>
+                                                    <a href="checkout.html" class="btn btn-sm cart-button theme-bg-color
+                                                    text-white">Thanh toán</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="right-side onhover-dropdown">
+                                        <div class="delivery-login-box">
+                                            <a href="user-dashboard.html" style="text-decoration: none; position: absolute; padding: 30px 50px"></a>
+                                            <div class="delivery-icon">
+                                                <i data-feather="user"></i>
+                                            </div>
+                                            <div class="delivery-detail">
+                                                <h6>Hello,</h6>
+                                                <h5>Khách hàng</h5>
+                                            </div>
+                                        </div>
+
+                                        <div class="onhover-div onhover-div-login">
+                                            <ul class="user-box-name">
+                                                <li class="product-box-contain">
+                                                    <i></i>
+                                                    <a href="login.html">Đăng nhập</a>
+                                                </li>
+
+                                                <li class="product-box-contain">
+                                                    <a href="sign-up.html">Đăng ký</a>
+                                                </li>
+
+                                                <li class="product-box-contain">
+                                                    <a href="forgot.html">Quên mật khẩu</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="header-nav">
+                        <div class="header-nav-left">
+                            <button class="dropdown-category">
+                                <i data-feather="align-left"></i>
+                                <span>Tất cả các loại</span>
+                            </button>
+
+                            <div class="category-dropdown">
+                                <div class="category-title">
+                                    <h5>Categories</h5>
+                                    <button type="button" class="btn p-0 close-button text-content">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+
+                                <ul class="category-list">
+                                    <li class="onhover-category-list">
+                                        <a href="javascript:void(0)" class="category-name">
+                                            <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/vegetable.svg" alt="">
+                                            <h6>Rau củ quả</h6>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+
+                                        <div class="onhover-category-box">
+                                            <div class="list-1">
+                                                <div class="category-title-box">
+                                                    <h5>Rau củ hữu cơ</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Khoai tây & Cà chua</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Dưa leo & Ớt chuông</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Rau lá xanh</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Rau củ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Đậu & Đậu bắp</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bắp cải & Súp lơ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bí & Đậu bắp Nhật</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Đặc sản</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="list-2">
+                                                <div class="category-title-box">
+                                                    <h5>Trái cây tươi</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Chuối & Đu đủ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Kiwi, Trái cây họ cam quýt</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Táo & Lựu</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Trái cây theo mùa</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Xoài</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Giỏ trái cây</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="onhover-category-list">
+                                        <a href="javascript:void(0)" class="category-name">
+                                            <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/cup.svg" alt="">
+                                            <h6>Đồ uống</h6>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+
+                                        <div class="onhover-category-box w-100">
+                                            <div class="list-1">
+                                                <div class="category-title-box">
+                                                    <h5>Đồ uống năng lượng & Nước ngọt</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Nước ngọt & Hỗn hợp cocktail</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Nước ngọt & Hỗn hợp cocktail</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Nước thể thao & Đồ uống năng lượng</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Đồ uống không có cồn</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Nước đóng chai</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Nước khoáng</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Nước có hương vị</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="onhover-category-list">
+                                        <a href="javascript:void(0)" class="category-name">
+                                            <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/meats.svg" alt="">
+                                            <h6>Thịt & Hải sản</h6>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+
+                                        <div class="onhover-category-box">
+                                            <div class="list-1">
+                                                <div class="category-title-box">
+                                                    <h5>Thịt</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Thịt tươi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Thịt đông lạnh</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Thịt ướp</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Thịt tươi & Thịt đông lạnh</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="list-2">
+                                                <div class="category-title-box">
+                                                    <h5>Hải sản</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Cá nước ngọt tươi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Cá khô</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Cá & Hải sản đông lạnh</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Cá nước mặn</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Hải sản đóng hộp</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Tôm & Tép</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Hải sản khác</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="onhover-category-list">
+                                        <a href="javascript:void(0)" class="category-name">
+                                            <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/breakfast.svg" alt="">
+                                            <h6>Bữa sáng & Sữa</h6>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+
+                                        <div class="onhover-category-box">
+                                            <div class="list-1">
+                                                <div class="category-title-box">
+                                                    <h5>Ngũ cốc ăn sáng</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Yến mạch & Cháo</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Ngũ cốc cho trẻ em</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Muesli</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Ngũ cốc dạng lát</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Granola & Thanh ngũ cốc</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Mì ăn liền</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Mỳ ống & Macaroni</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Đồ ăn nhẹ đông lạnh không thịt</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="list-2">
+                                                <div class="category-title-box">
+                                                    <h5>Sản phẩm từ sữa</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Sữa</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Sữa chua</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Paneer, Đậu phụ & Kem</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bơ & Margarine</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Sữa đặc, Sữa bột</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Sữa lắc & Lassi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Sữa chua & Shrikhand</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Sữa có hương vị, Sữa đậu nành</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="onhover-category-list">
+                                        <a href="javascript:void(0)" class="category-name">
+                                            <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/frozen.svg" alt="">
+                                            <h6>Thực phẩm đông lạnh</h6>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+
+                                        <div class="onhover-category-box w-100">
+                                            <div class="list-1">
+                                                <div class="category-title-box">
+                                                    <h5>Mì, Mỳ ống</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Mì ăn liền</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Mì Hakka</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Mì cốc</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bún</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Mỳ ống ăn liền</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="onhover-category-list">
+                                        <a href="javascript:void(0)" class="category-name">
+                                            <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/biscuit.svg" alt="">
+                                            <h6>Bánh quy & Đồ ăn vặt</h6>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+
+                                        <div class="onhover-category-box">
+                                            <div class="list-1">
+                                                <div class="category-title-box">
+                                                    <h5>Bánh quy & Bánh quy ngọt</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bánh quy mặn</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bánh quy Marie, Bánh quy dinh dưỡng, Bánh quy tiêu hóa</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bánh quy kem & Bánh quế</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bánh quy glucose & Sữa</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bánh quy</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="list-2">
+                                                <div class="category-title-box">
+                                                    <h5>Đồ ăn vặt làm từ bánh</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bánh mì que & Lavash</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bánh mì phô mai & Tỏi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bánh puffs, Bánh ngải & Bánh sandwich</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bánh mì vụn & Croutons</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="onhover-category-list">
+                                        <a href="javascript:void(0)" class="category-name">
+                                            <img src="https://themes.pixelstrap.com/fastkart/assets/svg/1/grocery.svg" alt="">
+                                            <h6>Đồ ăn & Đồ thiết yếu</h6>
+                                            <i class="fa-solid fa-angle-right"></i>
+                                        </a>
+
+                                        <div class="onhover-category-box">
+                                            <div class="list-1">
+                                                <div class="category-title-box">
+                                                    <h5>Thực phẩm</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Chanh, Gừng & Tỏi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Các loại thảo mộc Ấn Độ & Thảo mộc kỳ lạ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Rau củ hữu cơ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Trái cây hữu cơ</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="list-2">
+                                                <div class="category-title-box">
+                                                    <h5>Hàng hóa thiết yếu hữu cơ</h5>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Trái cây khô hữu cơ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Đậu & Đậu hữu cơ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Ngũ cốc & Bột hữu cơ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Đường hữu cơ, Đường thốt nốt</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Gia vị & Bột gia vị hữu cơ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Gạo hữu cơ, Gạo khác</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Bột hữu cơ</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">Dầu ăn hữu cơ, Ghee</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header-nav-middle">
+                            <div class="main-nav navbar navbar-expand-xl navbar-light navbar-sticky">
+                                <div class="offcanvas offcanvas-collapse order-xl-2" id="primaryMenu">
+                                    <div class="offcanvas-header navbar-shadow">
+                                        <h5>Menu</h5>
+                                    <button class="btn-close lead" type="button" data-bs-dismiss="offcanvas"></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown dropdown-mega">
+                                            
+                                        </li>
+
+                                        
+
+                                        <li class="nav-item dropdown dropdown-mega">
+                                            <a class="nav-link dropdown-toggle ps-xl-2 ps-0" href="javascript:void(0)"
+                                                data-bs-toggle="dropdown">Tươi Sống</a>
+
+                                            <div class="dropdown-menu dropdown-menu-2 dropdown-menu-left" style="--background-image: url(../images/bg.png);">
+                                                <div class="row">
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Rau củ</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Rau chân vịt</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Cải xà lách</a>
+
+                                                        <a href="shop-left-sidebar.html" class="dropdown-item">Ớt chuông</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Bí đỏ</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Cà rốt</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Đậu bắp</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Trái cây</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Táo mỹ</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Dưa hấu</a>
+
+                                                        <a href="shop-left-sidebar.html" class="dropdown-item">Bơ Đà Lạt</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Dâu tây</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Nho đen</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xoài</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Thịt, hải sản</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Ức gà</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Thịt lợn</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Nạc bò</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Hàu sữa</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Cá đuối</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Cá ngừ đại dương</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Cá la hán</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown dropdown-mega">
+                                            <a class="nav-link dropdown-toggle ps-xl-2 ps-0" href="javascript:void(0)"
+                                                data-bs-toggle="dropdown">Chế Biến Sẵn</a>
+
+                                            <div class="dropdown-menu dropdown-menu-2 dropdown-menu-left" style="--background-image: url(../images/thuc-pham-che-bien-san.png);">
+                                                <div class="row">
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Đồ đông lạnh</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Kem khoai môn</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Sữa chua uống Yakoult</a>
+
+                                                        <a href="shop-left-sidebar.html" class="dropdown-item">Khoai tây chiên sẵn</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Pizza thanh cua</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Bắp xào</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Mì Ý</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Đồ đóng gói</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Mì hảo hảo chua cay</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Lẩu tự sôi Omachi</a>
+
+                                                        <a href="shop-left-sidebar.html" class="dropdown-item">Cháo ăn liền gấu đỏ</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Cá hộp ba cô gái</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Bánh Oreo</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Snack khoai tây Lays</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Gia vị</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Nước mắm ớt tỏi Lý Sơn</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Muối hồng Himalaya</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Mắm ruốt chấm</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Giấm tiều</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Màu thực phẩm</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Bột chiên gà giòn Ajiquick</a>
+
+                                                        <a href="shop-left-sidebar.html" class="dropdown-item">Nước tương tam thái tử</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown dropdown-mega">
+                                            <a class="nav-link dropdown-toggle ps-xl-2 ps-0" href="javascript:void(0)"
+                                                data-bs-toggle="dropdown">Thức Uống</a>
+
+                                            <div class="dropdown-menu dropdown-menu-2 dropdown-menu-left" style="--background-image: url(../images/thuc-uong.png);">
+                                                <div class="row">
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Nước ngọt</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Nước khoáng Aquafina</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Nước khoáng có gas Pocari</a>
+
+                                                        <a href="shop-left-sidebar.html" class="dropdown-item">Revie chanh muối</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Sting nhân sâm dâu</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Pepsi vị chanh không calo</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Nước cam có tép Teppy</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Trà, cà phê</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Atiso Đà Lạt</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Trà gừng Nam Dược</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Trà sữa pha sẵn</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Cà phê trung nguyên</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Cà phê Việt</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Đồ uống có cồn</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Trái cây lên men StrongBow</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Rượu gạo</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Vang nho XO</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Bia Sài Gòn 63 tỉnh thành</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Bia Sapolo</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown dropdown-mega">
+                                            <a class="nav-link dropdown-toggle ps-xl-2 ps-0" href="javascript:void(0)"
+                                                data-bs-toggle="dropdown">Gia Dụng</a>
+
+                                            <div class="dropdown-menu dropdown-menu-2 dropdown-menu-left" style="--background-image: url(../images/do-gia-dung.png);">
+                                                <div class="row">
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Đồ dùng gia đình</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Giấy vệ sinh</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Bột giặt Omo</a>
+
+                                                        <a href="shop-left-sidebar.html" class="dropdown-item">Thớt gỗ chống mốc</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Dao mini 6 trong 1</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Miếng vắt nồi</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Dĩa sứ coopmart</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Đồ dùng cá nhân</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Kem đánh răng Colgate </a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Dầu gội X-men 2 trong 1</a>
+
+                                                        <a href="shop-left-sidebar.html" class="dropdown-item">Nước tẩy trang Bioderma</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Kem dưỡng ẩm Pons</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Lăn ngăn mùi Nivea</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Nước hoa hương lavender</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <h5 class="dropdown-header">Quần áo, đô chơi</h5>
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Lego Ninjago ss4</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Gấu bông Capypara</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Quần áo trẻ em</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Đồ lót nam, nữ</a>
+
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+
+                                                    <div class="dropdown-column col-xl-3">
+                                                        <a class="dropdown-item" href="shop-left-sidebar.html">Xem thêm</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown new-nav-item">
+                                            <label class="new-dropdown">Mới</label>
+                                            <a class="nav-link dropdown-toggle" href="javascript:void(0)"
+                                                data-bs-toggle="dropdown">Khác</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-become.html">Trở thành nhà bán hàng</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-grid.html">Danh sách nhà bán lẻ</a>
+                                                </li>
+                                                <!--<li>
+                                                    <a class="dropdown-item" href="seller-detail.html">Seller Detail</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-detail-2.html">Seller Detail
+                                                        2</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-grid.html">Seller Grid</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-grid-2.html">Seller Grid 2</a>
+                                                </li>-->
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="header-nav-right">
+                            <button class="btn deal-button" data-bs-toggle="modal" data-bs-target="#deal-box">
+                                <i data-feather="zap"></i>
+                                <span>Ưu đãi hôm nay</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- mobile fix menu start -->
+    <div class="mobile-menu d-md-none d-block mobile-cart">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <i class="iconly-Home icli"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+
+            <li class="mobile-category">
+                <a href="javascript:void(0)">
+                    <i class="iconly-Category icli js-link"></i>
+                    <span>Category</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="search.html" class="search-box">
+                    <i class="iconly-Search icli"></i>
+                    <span>Search</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="wishlist.html" class="notifi-wishlist">
+                    <i class="iconly-Heart icli"></i>
+                    <span>My Wish</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="cart.html">
+                    <i class="iconly-Bag-2 icli fly-cate"></i>
+                    <span>Cart</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- mobile fix menu end -->
+
+    <!-- Breadcrumb Section Start -->
+    <section class="breadcrumb-section pt-0">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-contain">
+                        <h2>Bảng điều khiển người dùng</h2>
+                        <nav>
+                            <ol class="breadcrumb mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">
+                                        <i class="fa-solid fa-house"></i>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item active">Bảng điều khiển người dùng</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Breadcrumb Section End -->
+
+    <!-- User Dashboard Section Start -->
+    <section class="user-dashboard-section section-b-space">
+        <div class="container-fluid-lg">
+            <div class="row">
+                <div class="col-xxl-3 col-lg-4">
+                    <div class="dashboard-left-sidebar">
+                        <div class="close-button d-flex d-lg-none">
+                            <button class="close-sidebar">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="profile-box">
+                            <div class="cover-image">
+                                <img src="../assets/images/inner-page/cover-img.jpg" class="img-fluid blur-up lazyload"
+                                    alt="">
+                            </div>
+
+                            <div class="profile-contain">
+                                <div class="profile-image">
+                                    <div class="position-relative">
+                                        <img src="../assets/images/vendor-page/logo.png"
+                                            class="blur-up lazyload update_img" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="profile-name">
+                                    <h3>Joshua D. Bass</h3>
+                                    <h6 class="text-content">joshuadbass@rhyta.com</h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="nav nav-pills user-nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a href="#pills-tabContent" class="nav-link active" id="pills-dashboard-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-dashboard" role="tab"><i
+                                        data-feather="home"></i>
+                                    Bảng điều khiển</a>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-product-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-product" type="button" role="tab"><i
+                                        data-feather="shopping-bag"></i>Sản phẩm</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-order-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-order" type="button" role="tab"><i
+                                        data-feather="shopping-bag"></i>Đơn hàng</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab"><i data-feather="user"></i>
+                                    Hồ sơ</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-security-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-security" type="button" role="tab"><i
+                                        data-feather="settings"></i>
+                                    Cài đặt</button>
+                            </li>
+
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-out-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-out" type="button" role="tab"><i data-feather="log-out"></i>
+                                    Đăng xuất</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xxl-9 col-lg-8">
+                    <button class="btn left-dashboard-show btn-animation btn-md fw-bold d-block mb-4 d-lg-none">Show
+                        Menu</button>
+                    <div class="dashboard-right-sidebar">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-dashboard" role="tabpanel">
+                                <div class="dashboard-home">
+                                    <div class="title">
+                                        <h2>Bảng điều khiển của tôi</h2>
+                                        <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="dashboard-user-name">
+                                        <h6 class="text-content">Xin chào, <b class="text-title">Vicki E. Pope</b></h6>
+                                        <p class="text-content">Từ Bảng Điều Khiển Tài Khoản của bạn, bạn có thể xem nhanh hoạt động tài khoản gần đây và cập nhật thông tin tài khoản của mình. Chọn một liên kết bên dưới để xem hoặc chỉnh sửa thông tin.</p>
+                                        
+                                    </div>
+
+                                    <div class="total-box">
+                                        <div class="row g-sm-4 g-3">
+                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                                <div class="total-contain">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/order.svg"
+                                                        class="img-1 blur-up lazyload" alt="">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/order.svg" class="blur-up lazyload"
+                                                        alt="">
+                                                    <div class="total-detail">
+                                                        <h5>Tổng Sản Phẩm</h5>
+                                                        <h3>25</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                                <div class="total-contain">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/pending.svg"
+                                                        class="img-1 blur-up lazyload" alt="">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/pending.svg" class="blur-up lazyload"
+                                                        alt="">
+                                                    <div class="total-detail">
+                                                        <h5>Tổng Doanh Số</h5>
+                                                        <h3>12550</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    
+                                            <div class="col-xxl-4 col-lg-6 col-md-4 col-sm-6">
+                                                <div class="total-contain">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/wishlist.svg"
+                                                        class="img-1 blur-up lazyload" alt="">
+                                                    <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/wishlist.svg"
+                                                        class="blur-up lazyload" alt="">
+                                                    <div class="total-detail">
+                                                        <h5>Đơn Hàng Chờ Xử Lý</h5>
+                                                        <h3>36</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+
+                                    <div class="row g-4">
+                                        <div class="col-xxl-6">
+                                            <div class="dashboard-bg-box">
+                                                <div id="chart"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-6">
+                                            <div class="dashboard-bg-box">
+                                                <div id="sale"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xxl-6">
+                                            <div class="table-responsive dashboard-bg-box">
+                                                <div class="dashboard-title mb-4">
+                                                    <h3>Sản Phẩm Đang Hot</h3>
+                                                </div>
+                                        
+                                                <table class="table product-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Hình Ảnh</th>
+                                                            <th scope="col">Tên Sản Phẩm</th>
+                                                            <th scope="col">Giá</th>
+                                                            <th scope="col">Doanh Số</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="product-image">
+                                                                <img src="../assets/images/vegetable/product/1.png"
+                                                                    class="img-fluid" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <h6>Cookies Choco Chip Crunchy Fantasy</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>$25.69</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>152</h6>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                        <tr>
+                                                            <td class="product-image">
+                                                                <img src="../assets/images/vegetable/product/2.png"
+                                                                    class="img-fluid" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <h6>Cookies Bơ Lạc Premium Peanut Butter 600 g</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>$35.36</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>34</h6>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                        <tr>
+                                                            <td class="product-image">
+                                                                <img src="../assets/images/vegetable/product/3.png"
+                                                                    class="img-fluid" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <h6>Khoai Tây Chiên Yumitos Rắc Ớt 100 g</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>$78.55</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>78</h6>
+                                                            </td>
+                                                        </tr>
+                                        
+                                                        <tr>
+                                                            <td class="product-image">
+                                                                <img src="../assets/images/vegetable/product/4.png"
+                                                                    class="img-fluid" alt="">
+                                                            </td>
+                                                            <td>
+                                                                <h6>Sữa Tươi Toned Healthy Long Life 1 L</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>$32.98</h6>
+                                                            </td>
+                                                            <td>
+                                                                <h6>135</h6>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        
+
+                                        <div class="col-xxl-6">
+                                            <div class="order-tab dashboard-bg-box">
+                                                <div class="dashboard-title mb-4">
+                                                    <h3>Đơn Hàng Gần Đây</h3>
+                                                </div>
+                                        
+                                                <div class="table-responsive">
+                                                    <table class="table order-table">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Mã Đơn Hàng</th>
+                                                                <th scope="col">Tên Sản Phẩm</th>
+                                                                <th scope="col">Trạng Thái</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="product-image">#254834</td>
+                                                                <td>
+                                                                    <h6>Cookies Choco Chip</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="success">Đã Gửi</label>
+                                                                </td>
+                                                            </tr>
+                                        
+                                                            <tr>
+                                                                <td class="product-image">#355678</td>
+                                                                <td>
+                                                                    <h6>Cookies Bơ Premium</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="danger">Chờ Xử Lý</label>
+                                                                </td>
+                                                            </tr>
+                                        
+                                                            <tr>
+                                                                <td class="product-image">#647536</td>
+                                                                <td>
+                                                                    <h6>Khoai Tây Chiên Rắc Ớt</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="success">Đã Gửi</label>
+                                                                </td>
+                                                            </tr>
+                                        
+                                                            <tr>
+                                                                <td class="product-image">#125689</td>
+                                                                <td>
+                                                                    <h6>Sữa 1 L</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="danger">Chờ Xử Lý</label>
+                                                                </td>
+                                                            </tr>
+                                        
+                                                            <tr>
+                                                                <td class="product-image">#215487</td>
+                                                                <td>
+                                                                    <h6>Chân Cừu Tươi</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="danger">Chờ Xử Lý</label>
+                                                                </td>
+                                                            </tr>
+                                        
+                                                            <tr>
+                                                                <td class="product-image">#365474</td>
+                                                                <td>
+                                                                    <h6>Cà Phê Hòa Tan</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="success">Đã Gửi</label>
+                                                                </td>
+                                                            </tr>
+                                        
+                                                            <tr>
+                                                                <td class="product-image">#368415</td>
+                                                                <td>
+                                                                    <h6>Que Jowar và Chips Jowar</h6>
+                                                                </td>
+                                                                <td>
+                                                                    <label class="danger">Chờ Xử Lý</label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-product" role="tabpanel">
+                                <div class="product-tab">
+                                    <div class="title">
+                                        <h2>Tất cả sản phẩm</h2>
+                                        <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="table-responsive dashboard-bg-box">
+                                        <table class="table product-table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Hình Ảnh</th>
+                                                    <th scope="col">Tên Sản Phẩm</th>
+                                                    <th scope="col">Giá</th>
+                                                    <th scope="col">Kho</th>
+                                                    <th scope="col">Số Lượng Bán</th>
+                                                    <th scope="col">Chỉnh Sửa / Xóa</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/1.png" class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Cookies Choco Chip Giòn Fantasy</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$25.69</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>63</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>152</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#edit-product">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        </a>
+                                                        <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                            <i data-feather="trash-2" class="delete"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/2.png" class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Cookies Bơ Premium 600 g</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$35.36</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>14</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>34</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/3.png" class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Khoai Tây Chiên Rắc Ớt Yumitos 100 g</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$78.55</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>55</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>78</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/4.png" class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Sữa Tươi Long Life 1 L</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$32.98</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>69</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>135</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/5.png" class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Chân Cừu Tươi, Đóng Gói 5 Kg</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$36.98</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>35</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>154</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/6.png" class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Cà Phê Hòa Tan Cold Brew 50 g</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$36.58</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>69</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>168</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+                                        
+                                                <tr>
+                                                    <td class="product-image">
+                                                        <img src="../assets/images/vegetable/product/7.png" class="img-fluid" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <h6>Combo SnackAmor: Que Jowar và Chips Jowar</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6 class="theme-color fw-bold">$25.69</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>63</h6>
+                                                    </td>
+                                                    <td>
+                                                        <h6>152</h6>
+                                                    </td>
+                                                    <td class="edit-delete">
+                                                        <i data-feather="edit" class="edit"></i>
+                                                        <i data-feather="trash-2" class="delete"></i>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        
+
+                                        <nav class="custom-pagination">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="javascript:void(0)" tabindex="-1">
+                                                        <i class="fa-solid fa-angles-left"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="javascript:void(0)">1</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">2</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">3</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">
+                                                        <i class="fa-solid fa-angles-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-order" role="tabpanel">
+                                <div class="dashboard-order">
+                                    <div class="title">
+                                        <h2>Tất cả đơn hàng</h2>
+                                        <span class="title-leaf title-leaf-gray">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="order-tab dashboard-bg-box">
+                                        <div class="table-responsive">
+                                            <table class="table order-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Mã Đơn Hàng</th>
+                                                        <th scope="col">Tên Sản Phẩm</th>
+                                                        <th scope="col">Trạng Thái</th>
+                                                        <th scope="col">Giá</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="product-image">#254834</td>
+                                                        <td>
+                                                            <h6>Cookies Choco Chip Giòn Fantasy</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="success">Đã Gửi</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+                                            
+                                                    <tr>
+                                                        <td class="product-image">#355678</td>
+                                                        <td>
+                                                            <h6>Cookies Bơ Premium 600 g</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="danger">Đang Chờ</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+                                            
+                                                    <tr>
+                                                        <td class="product-image">#647536</td>
+                                                        <td>
+                                                            <h6>Khoai Tây Chiên Rắc Ớt Yumitos 100 g</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="success">Đã Gửi</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+                                            
+                                                    <tr>
+                                                        <td class="product-image">#125689</td>
+                                                        <td>
+                                                            <h6>Sữa Tươi Long Life 1 L</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="danger">Đang Chờ</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+                                            
+                                                    <tr>
+                                                        <td class="product-image">#215487</td>
+                                                        <td>
+                                                            <h6>Chân Cừu Tươi, Đóng Gói 5 Kg</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="danger">Đang Chờ</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+                                            
+                                                    <tr>
+                                                        <td class="product-image">#365474</td>
+                                                        <td>
+                                                            <h6>Cà Phê Hòa Tan Cold Brew 50 g</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="success">Đã Gửi</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+                                            
+                                                    <tr>
+                                                        <td class="product-image">#368415</td>
+                                                        <td>
+                                                            <h6>Combo SnackAmor: Que Jowar và Chips Jowar</h6>
+                                                        </td>
+                                                        <td>
+                                                            <label class="danger">Đang Chờ</label>
+                                                        </td>
+                                                        <td>
+                                                            <h6>$25.69</h6>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                        </div>
+                                        <nav class="custom-pagination">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="javascript:void(0)" tabindex="-1">
+                                                        <i class="fa-solid fa-angles-left"></i>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active">
+                                                    <a class="page-link" href="javascript:void(0)">1</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">2</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">3</a>
+                                                </li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="javascript:void(0)">
+                                                        <i class="fa-solid fa-angles-right"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel">
+                                <div class="dashboard-profile">
+                                    <div class="title">
+                                        <h2>Hồ sơ của tôi</h2>
+                                        <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+
+                                    <div class="profile-tab dashboard-bg-box">
+                                        <div class="dashboard-title dashboard-flex">
+                                            <h3>Thông tin chi tiết</h3>
+                                            <button class="btn btn-sm theme-bg-color text-white" data-bs-toggle="modal"
+                                                data-bs-target="#edit-profile">Chỉnh sửa</button>
+                                        </div>
+
+                                        <ul>
+                                            <li>
+                                                <h5>Tên Công Ty :</h5>
+                                                <h5>Cửa Hàng Tạp Hóa</h5>
+                                            </li>
+                                            <li>
+                                                <h5>Email :</h5>
+                                                <h5>joshuadbass@rhyta.com</h5>
+                                            </li>
+                                            <li>
+                                                <h5>Quốc Gia / Vùng :</h5>
+                                                <h5>107 Veltri Drive</h5>
+                                            </li>
+                                        
+                                            <li>
+                                                <h5>Năm Thành Lập :</h5>
+                                                <h5>2022</h5>
+                                            </li>
+                                        
+                                            <li>
+                                                <h5>Số Lượng Nhân Viên :</h5>
+                                                <h5>154 - 360 Người</h5>
+                                            </li>
+                                            <li>
+                                                <h5>Danh Mục :</h5>
+                                                <h5>Tạp Hóa</h5>
+                                            </li>
+                                        
+                                            <li>
+                                                <h5>Địa Chỉ :</h5>
+                                                <h5>234 High St</h5>
+                                            </li>
+                                        
+                                            <li>
+                                                <h5>Thành Phố / Tỉnh :</h5>
+                                                <h5>107 Veltri Drive</h5>
+                                            </li>
+                                        
+                                            <li>
+                                                <h5>Mã Bưu Chính :</h5>
+                                                <h5>B23 6SN</h5>
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="pills-security" role="tabpanel">
+                                <div class="dashboard-privacy">
+                                    <div class="title">
+                                        <h2>Cài đặt của tôi</h2>
+                                        <span class="title-leaf">
+                                            <svg class="icon-width bg-gray">
+                                                <use xlink:href="https://themes.pixelstrap.com/fastkart/assets/svg/leaf.svg#leaf"></use>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                
+                                    <div class="dashboard-bg-box">
+                                        <div class="dashboard-title mb-4">
+                                            <h3>Thông báo</h3>
+                                        </div>
+                                
+                                        <div class="privacy-box">
+                                            <div class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="desktop" name="desktop" checked>
+                                                <label class="form-check-label ms-2" for="desktop">Hiển thị thông báo trên máy tính</label>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="privacy-box">
+                                            <div class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="enable" name="desktop">
+                                                <label class="form-check-label ms-2" for="enable">Bật thông báo</label>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="privacy-box">
+                                            <div class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="activity" name="desktop">
+                                                <label class="form-check-label ms-2" for="activity">Nhận thông báo về hoạt động của tôi</label>
+                                            </div>
+                                        </div>
+                                
+                                        <div class="privacy-box">
+                                            <div class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="dnd" name="desktop">
+                                                <label class="form-check-label ms-2" for="dnd">DND (Không làm phiền)</label>
+                                            </div>
+                                        </div>
+                                
+                                        <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Lưu thay đổi</button>
+                                    </div>
+                                
+                                    <div class="dashboard-bg-box">
+                                        <div class="dashboard-title mb-4">
+                                            <h3>Vô hiệu hóa tài khoản</h3>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="concern" name="concern">
+                                                <label class="form-check-label ms-2" for="concern">Tôi có mối quan tâm về quyền riêng tư</label>
+                                            </div>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="temporary" name="concern">
+                                                <label class="form-check-label ms-2" for="temporary">Đây chỉ là tạm thời</label>
+                                            </div>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="other" name="concern">
+                                                <label class="form-check-label ms-2" for="other">Khác</label>
+                                            </div>
+                                        </div>
+                                
+                                        <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Vô hiệu hóa tài khoản</button>
+                                    </div>
+                                
+                                    <div class="dashboard-bg-box">
+                                        <div class="dashboard-title mb-4">
+                                            <h3>Xóa tài khoản</h3>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="usable" name="usable">
+                                                <label class="form-check-label ms-2" for="usable">Không còn sử dụng được</label>
+                                            </div>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="account" name="usable">
+                                                <label class="form-check-label ms-2" for="account">Muốn chuyển sang tài khoản khác</label>
+                                            </div>
+                                        </div>
+                                        <div class="privacy-box">
+                                            <div class="form-check custom-form-check custom-form-check-2 d-flex align-items-center">
+                                                <input class="form-check-input" type="radio" id="other-2" name="usable">
+                                                <label class="form-check-label ms-2" for="other-2">Khác</label>
+                                            </div>
+                                        </div>
+                                
+                                        <button class="btn theme-bg-color btn-md fw-bold mt-4 text-white">Xóa tài khoản của tôi</button>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- User Dashboard Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="section-t-space">
+        <div class="container-fluid-lg">
+            <div class="service-section">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="service-contain">
+                            <div class="service-box">
+                                <div class="service-image">
+                                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/product.svg" class="blur-up lazyload" alt="">
+                                </div>
+
+                                <div class="service-detail">
+                                    <h5>Các sản phẩm tươi mới</h5>
+                                </div>
+                            </div>
+
+                            <div class="service-box">
+                                <div class="service-image">
+                                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/delivery.svg" class="blur-up lazyload" alt="">
+                                </div>
+
+                                <div class="service-detail">
+                                    <h5>Giao hàng miễn phí cho đơn hàng trên 50$</h5>
+                                </div>
+                            </div>
+
+                            <div class="service-box">
+                                <div class="service-image">
+                                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/discount.svg" class="blur-up lazyload" alt="">
+                                </div>
+
+                                <div class="service-detail">
+                                    <h5>Giảm giá khổng lồ hàng ngày</h5>
+                                </div>
+                            </div>
+
+                            <div class="service-box">
+                                <div class="service-image">
+                                    <img src="https://themes.pixelstrap.com/fastkart/assets/svg/market.svg" class="blur-up lazyload" alt="">
+                                </div>
+
+                                <div class="service-detail">
+                                    <h5>Giá tốt nhất trên thị trường</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-footer section-b-space section-t-space">
+                <div class="row g-md-4 g-3">
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="footer-logo">
+                            <div class="theme-logo">
+                                <a href="index-5.html">
+                                    <img src="../assets/images/logo/p-mart-logo.png" class="blur-up lazyload" alt="">
+                                </a>
+                            </div>
+
+                            <div class="footer-logo-contain">
+                                <p>Một thực tế đã được chứng minh từ lâu là người đọc sẽ bị phân tâm bởi nội dung có thể đọc được.</p>
+
+                                <ul class="address">
+                                    <li>
+                                        <i data-feather="home"></i>
+                                        <a href="javascript:void(0)">123 Bình Đông, phường 15, Quận 8, TP Hồ Chí Minh</a>
+                                    </li>
+                                    <li>
+                                        <i data-feather="mail"></i>
+                                        <a href="javascript:void(0)">support@pmart.com</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+                        <div class="footer-title">
+                            <h4>Danh mục</h4>
+                        </div>
+
+                        <div class="footer-contain">
+                            <ul>
+                                <li>
+                                    <a href="shop-left-sidebar.html" class="text-content">Rau củ & Trái cây</a>
+                                </li>
+                                <li>
+                                    <a href="shop-left-sidebar.html" class="text-content">Đồ uống</a>
+                                </li>
+                                <li>
+                                    <a href="shop-left-sidebar.html" class="text-content">Thịt & Hải sản</a>
+                                </li>
+                                <li>
+                                    <a href="shop-left-sidebar.html" class="text-content">Thực phẩm đông lạnh</a>
+                                </li>
+                                <li>
+                                    <a href="shop-left-sidebar.html" class="text-content">Bánh quy & Đồ ăn vặt</a>
+                                </li>
+                                <li>
+                                    <a href="shop-left-sidebar.html" class="text-content">Thực phẩm & Hàng hóa thiết yếu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl col-lg-2 col-sm-3">
+                        <div class="footer-title">
+                            <h4>Các liên kết hữu ích</h4>
+                        </div>
+                        
+                        <div class="footer-contain">
+                            <ul>
+                                <li>
+                                    <a href="index-5.html" class="text-content">Trang chủ</a>
+                                </li>
+                                <li>
+                                    <a href="shop-left-sidebar.html" class="text-content">Cửa hàng</a>
+                                </li>
+                                <li>
+                                    <a href="about-us.html" class="text-content">Về chúng tôi</a>
+                                </li>
+                                <li>
+                                    <a href="blog-list.html" class="text-content">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us.html" class="text-content">Liên hệ với chúng tôi</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-2 col-sm-3">
+                        <div class="footer-title">
+                            <h4>Trung tâm hỗ trợ</h4>
+                        </div>
+                    <div class="footer-contain">
+                        <ul>
+                            <li>
+                                <a href="order-success.html" class="text-content">Đơn hàng của bạn</a>
+                            </li>
+                            <li>
+                                <a href="user-dashboard.html" class="text-content">Tài khoản của bạn</a>
+                            </li>
+                            <li>
+                                <a href="order-tracking.html" class="text-content">Theo dõi đơn hàng</a>
+                            </li>
+                            <li>
+                                <a href="wishlist.html" class="text-content">Danh sách mong muốn</a>
+                            </li>
+                            <li>
+                                <a href="search.html" class="text-content">Tìm kiếm</a>
+                            </li>
+                            <li>
+                                <a href="faq.html" class="text-content">Câu hỏi thường gặp</a>
+                            </li>
+                        </ul>
+                    </div>
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="footer-title">
+                            <h4>Liên hệ với chúng tôi</h4>
+                        </div>
+                        <div class="footer-contact">
+                            <ul>
+                                <li>
+                                    <div class="footer-number">
+                                        <i data-feather="phone"></i>
+                                        <div class="contact-number">
+                                            <h6 class="text-content">Hotline 24/7 :</h6>
+                                            <h5>+12 345 678 90</h5>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="footer-number">
+                                        <i data-feather="mail"></i>
+                                        <div class="contact-number">
+                                            <h6 class="text-content">Địa chỉ Email :</h6>
+                                            <h5>pmart@gmail.com</h5>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li class="social-app">
+                                    <h5 class="mb-2 text-content">Tải App :</h5>
+                                    <ul>
+                                        <li class="mb-0">
+                                            <a href="https://play.google.com/store/apps" target="_blank">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/playstore.svg" class="blur-up lazyload"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                        <li class="mb-0">
+                                            <a href="https://www.apple.com/in/app-store/" target="_blank">
+                                                <img src="https://themes.pixelstrap.com/fastkart/assets/images/appstore.svg" class="blur-up lazyload"
+                                                    alt="">
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-footer section-small-space">
+                <div class="reserve">
+                    <h6 class="text-content">©2005 P-Mart All rights reserved</h6>
+                </div>
+
+                <div class="payment">
+                    <img src="../assets/images/payment/1.png" class="blur-up lazyload" alt="">
+                </div>
+
+                <div class="social-link">
+                    <h6 class="text-content">Giữ kết nối :</h6>
+                    <ul>
+                        <li>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://in.pinterest.com/" target="_blank">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Deal Box Modal Start -->
+    <div class="modal fade theme-modal deal-modal" id="deal-box" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <h5 class="modal-title w-100" id="deal_today">Khuyến Mãi Hôm Nay</h5>
+                        <p class="mt-1 text-content">Khuyến mãi được đề xuất cho bạn.</p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="deal-offer-box">
+                        <ul class="deal-offer-list">
+                            <li class="list-1">
+                                <div class="deal-offer-contain">
+                                    <a href="shop-left-sidebar.html" class="deal-image">
+                                        <img src="../assets/images/vegetable/product/10.png" class="blur-up lazyload" alt="">
+                                    </a>
+                                    <a href="shop-left-sidebar.html" class="deal-contain">
+                                        <h5>Cà phê hòa tan Blend 50 g Mua 1 Tặng 1</h5>
+                                        <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                                    </a>
+                                </div>
+                            </li>
+    
+                            <li class="list-2">
+                                <div class="deal-offer-contain">
+                                    <a href="shop-left-sidebar.html" class="deal-image">
+                                        <img src="../assets/images/vegetable/product/11.png" class="blur-up lazyload" alt="">
+                                    </a>
+                                    <a href="shop-left-sidebar.html" class="deal-contain">
+                                        <h5>Cà phê hòa tan Blend 50 g Mua 1 Tặng 1</h5>
+                                        <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                                    </a>
+                                </div>
+                            </li>
+    
+                            <li class="list-3">
+                                <div class="deal-offer-contain">
+                                    <a href="shop-left-sidebar.html" class="deal-image">
+                                        <img src="../assets/images/vegetable/product/12.png" class="blur-up lazyload" alt="">
+                                    </a>
+                                    <a href="shop-left-sidebar.html" class="deal-contain">
+                                        <h5>Cà phê hòa tan Blend 50 g Mua 1 Tặng 1</h5>
+                                        <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                                    </a>
+                                </div>
+                            </li>
+    
+                            <li class="list-1">
+                                <div class="deal-offer-contain">
+                                    <a href="shop-left-sidebar.html" class="deal-image">
+                                        <img src="../assets/images/vegetable/product/13.png" class="blur-up lazyload" alt="">
+                                    </a>
+                                    <a href="shop-left-sidebar.html" class="deal-contain">
+                                        <h5>Cà phê hòa tan Blend 50 g Mua 1 Tặng 1</h5>
+                                        <h6>$52.57 <del>57.62</del> <span>500 G</span></h6>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Deal Box Modal End -->
+
+    <!-- Tap to top and theme setting button start -->
+    <div class="theme-option">
+        <div class="setting-box">
+            <button class="btn setting-button">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+
+            <div class="theme-setting-2">
+                <div class="theme-box">
+                    <ul>
+                        <li>
+                            <div class="setting-name">
+                                <h4>Color</h4>
+                            </div>
+                            <div class="theme-setting-button color-picker">
+                                <form class="form-control">
+                                    <label for="colorPick" class="form-label mb-0">Theme Color</label>
+                                    <input type="color" class="form-control form-control-color" id="colorPick"
+                                        value="#0da487" title="Choose your color">
+                                </form>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="setting-name">
+                                <h4>Dark</h4>
+                            </div>
+                            <div class="theme-setting-button">
+                                <button class="btn btn-2 outline" id="darkButton">Dark</button>
+                                <button class="btn btn-2 unline" id="lightButton">Light</button>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="setting-name">
+                                <h4>RTL</h4>
+                            </div>
+                            <div class="theme-setting-button rtl">
+                                <button class="btn btn-2 rtl-unline">LTR</button>
+                                <button class="btn btn-2 rtl-outline">RTL</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="back-to-top">
+            <a id="back-to-top" href="#">
+                <i class="fas fa-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Tap to top and theme setting button end -->
+
+    <!-- Bg overlay Start -->
+    <div class="bg-overlay"></div>
+    <!-- Bg overlay End -->
+
+    <!-- Add address modal box start -->
+    <div class="modal fade theme-modal" id="add-address" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add a new address</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name">
+                            <label for="fname">First Name</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name">
+                            <label for="lname">Last Name</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email Address">
+                            <label for="email">Email Address</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="address"
+                                style="height: 100px"></textarea>
+                            <label for="address">Enter Address</label>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div class="form-floating mb-4 theme-form-floating">
+                            <input type="email" class="form-control" id="pin" placeholder="Enter Pin Code">
+                            <label for="pin">Pin Code</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-md" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn theme-bg-color btn-md text-white" data-bs-dismiss="modal">Save
+                        changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add address modal box end -->
+
+    <!-- Location Modal Start -->
+    <div class="modal location-modal fade theme-modal" id="locationModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Chọn địa điểm giao hàng của bạn</h5>
+                    <p class="mt-1 text-content">Nhập địa chỉ của bạn và chúng tôi sẽ hiển thị ưu đãi dành riêng cho khu vực của bạn.</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="location-list">
+                        <div class="search-input">
+                            <input type="search" class="form-control" placeholder="Tìm khu vực của bạn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+
+                        <div class="disabled-box">
+                            <h6>Chọn vị trí</h6>
+                        </div>
+
+                        <ul class="location-select custom-height">
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Alabama</h6>
+                                    <span>Min: $130</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Arizona</h6>
+                                    <span>Min: $150</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>California</h6>
+                                    <span>Min: $110</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Colorado</h6>
+                                    <span>Min: $140</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Florida</h6>
+                                    <span>Min: $160</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Georgia</h6>
+                                    <span>Min: $120</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Kansas</h6>
+                                    <span>Min: $170</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Minnesota</h6>
+                                    <span>Min: $120</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>New York</h6>
+                                    <span>Min: $110</span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="javascript:void(0)">
+                                    <h6>Washington</h6>
+                                    <span>Min: $130</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Location Modal End -->
+
+    <!-- Edit Profile Start -->
+    <div class="modal fade theme-modal" id="editProfile" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel2">Edit Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-xxl-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="pname" value="Jack Jennas">
+                                    <label for="pname">Full Name</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="email" class="form-control" id="email1" value="vicki.pope@gmail.com">
+                                    <label for="email1">Email address</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input class="form-control" type="tel" value="4567891234" name="mobile" id="mobile"
+                                        maxlength="10" oninput="javascript: if (this.value.length > this.maxLength) this.value =
+                                            this.value.slice(0, this.maxLength);">
+                                    <label for="mobile">Email address</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address1"
+                                        value="8424 James Lane South San Francisco">
+                                    <label for="address1">Add Address</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-12">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address2" value="CA 94080">
+                                    <label for="address2">Add Address 2</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="floatingSelect1">
+                                        <option selected>Choose Your Country</option>
+                                        <option value="kingdom">United Kingdom</option>
+                                        <option value="states">United States</option>
+                                        <option value="fra">France</option>
+                                        <option value="china">China</option>
+                                        <option value="spain">Spain</option>
+                                        <option value="italy">Italy</option>
+                                        <option value="turkey">Turkey</option>
+                                        <option value="germany">Germany</option>
+                                        <option value="russian">Russian Federation</option>
+                                        <option value="malay">Malaysia</option>
+                                        <option value="mexico">Mexico</option>
+                                        <option value="austria">Austria</option>
+                                        <option value="hong">Hong Kong SAR, China</option>
+                                        <option value="ukraine">Ukraine</option>
+                                        <option value="thailand">Thailand</option>
+                                        <option value="saudi">Saudi Arabia</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="singa">Singapore</option>
+                                    </select>
+                                    <label for="floatingSelect">Country</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="floatingSelect">
+                                        <option selected>Choose Your City</option>
+                                        <option value="kingdom">India</option>
+                                        <option value="states">Canada</option>
+                                        <option value="fra">Dubai</option>
+                                        <option value="china">Los Angeles</option>
+                                        <option value="spain">Thailand</option>
+                                    </select>
+                                    <label for="floatingSelect">City</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="address3" value="94080">
+                                    <label for="address3">Pin Code</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold"
+                        data-bs-dismiss="modal">Close</button>
+                    <button type="button" data-bs-dismiss="modal"
+                        class="btn theme-bg-color btn-md fw-bold text-light">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Profile End -->
+
+    <!-- Edit Card Start -->
+    <div class="modal fade theme-modal" id="editCard" tabindex="-1">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel8">Edit Card</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row g-4">
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="finame" value="Mark">
+                                    <label for="finame">First Name</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-6">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <input type="text" class="form-control" id="laname" value="Jecno">
+                                    <label for="laname">Last Name</label>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-xxl-4">
+                            <form>
+                                <div class="form-floating theme-form-floating">
+                                    <select class="form-select" id="floatingSelect12">
+                                        <option selected>Card Type</option>
+                                        <option value="kingdom">Visa Card</option>
+                                        <option value="states">MasterCard Card</option>
+                                        <option value="fra">RuPay Card</option>
+                                        <option value="china">Contactless Card</option>
+                                        <option value="spain">Maestro Card</option>
+                                    </select>
+                                    <label for="floatingSelect12">Card Type</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold"
+                        data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light">Update Card</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Card End -->
+
+    <!-- Remove Profile Modal Start -->
+    <div class="modal fade theme-modal remove-profile" id="removeProfile" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header d-block text-center">
+                    <h5 class="modal-title w-100" id="exampleModalLabel22">Are You Sure ?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box">
+                        <p>The permission for the use/group, preview is inherited from the object, object will create a
+                            new permission for this object</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light"
+                        data-bs-target="#removeAddress" data-bs-toggle="modal">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade theme-modal remove-profile" id="removeAddress" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel12">Done!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box text-center">
+                        <h4 class="text-content">It's Removed.</h4>
+                    </div>
+                </div>
+                <div class="modal-footer pt-0">
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light"
+                        data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Remove Profile Modal End -->
+
+    <!-- Edit Profile Modal Start -->
+    <div class="modal fade theme-modal" id="edit-profile" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">Chỉnh Sửa Hồ Sơ Của Bạn</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="companyName" class="form-label">Tên Công Ty</label>
+                            <input type="text" class="form-control" id="companyName" value="Cửa Hàng Tạp Hóa">
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">Địa Chỉ Email</label>
+                            <input type="email" class="form-control" id="emailAddress" value="joshuadbass@rhyta.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="country" class="form-label">Quốc Gia / Vùng</label>
+                            <input type="text" class="form-control" id="country" value="107 Veltri Drive">
+                        </div>
+                        <div class="mb-3">
+                            <label for="established" class="form-label">Năm Thành Lập</label>
+                            <input type="email" class="form-control" id="established" value="2022">
+                        </div>
+                        <div class="mb-3">
+                            <label for="employees" class="form-label">Số Lượng Nhân Viên</label>
+                            <input type="text" class="form-control" id="employees" value="154 - 360 Người">
+                        </div>
+                        <div class="mb-3">
+                            <label for="category" class="form-label">Danh Mục</label>
+                            <input type="email" class="form-control" id="category" value="Tạp Hóa">
+                        </div>
+                        <div class="mb-3">
+                            <label for="street" class="form-label">Địa Chỉ Phố</label>
+                            <input type="text" class="form-control" id="street" value="234 High St">
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">Thành Phố / Tỉnh</label>
+                            <input type="email" class="form-control" id="city" value="107 Veltri Drive">
+                        </div>
+                        <div class="mb-3">
+                            <label for="zip" class="form-label">Mã Bưu Chính</label>
+                            <input type="text" class="form-control" id="zip" value="B23 6SN">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light" data-bs-dismiss="modal">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Profile Modal End -->
+    
+    <!-- Delete Modal Box Start -->
+    <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header d-block text-center">
+                    <h5 class="modal-title w-100" id="exampleModalLabel22">Xác nhận xóa?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box">
+                        <p><h3 style="margin-left: 5px;">Bạn có chắc chắn là muốn xóa sản phẩm này không?</h3></p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-target="#exampleModalToggle2"
+                        data-bs-toggle="modal" data-bs-dismiss="modal">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle2" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel12">Xong!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box text-center">
+                        <h4 class="text-content"><strong>Đã xóa thành công!</strong></h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Delete Modal Box End -->
+
+    <!-- Edit Product Modal Start -->
+    <div class="modal fade theme-modal" id="edit-product" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">Chỉnh Sửa Sản Phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="companyName" class="form-label">Tên Sản Phẩm</label>
+                            <input type="text" class="form-control" id="companyName" value="Bánh Quy">
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="emailAddress" class="form-label">bla bla bla</label>
+                            <input type="email" class="form-control" id="emailAddress" value="joshuadbass@rhyta.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="country" class="form-label">Quốc Gia / Vùng</label>
+                            <input type="text" class="form-control" id="country" value="107 Veltri Drive">
+                        </div>
+                        <div class="mb-3">
+                            <label for="established" class="form-label">Năm Thành Lập</label>
+                            <input type="email" class="form-control" id="established" value="2022">
+                        </div> -->
+                        <div class="mb-3">
+                            <label for="employees" class="form-label">Giá Tiền</label>
+                            <input type="text" class="form-control" id="employees" value="10 louis phạm">
+                        </div> 
+                        <div class="mb-3"> 
+                            <label for="category" class="form-label">Danh Mục</label>
+                            <input type="email" class="form-control" id="category" value="Tạp Hóa">
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="street" class="form-label">Địa Chỉ Phố</label>
+                            <input type="text" class="form-control" id="street" value="234 High St">
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">Thành Phố / Tỉnh</label>
+                            <input type="email" class="form-control" id="city" value="107 Veltri Drive">
+                        </div>
+                        <div class="mb-3">
+                            <label for="zip" class="form-label">Mã Bưu Chính</label>
+                            <input type="text" class="form-control" id="zip" value="B23 6SN">
+                        </div> -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light" data-bs-dismiss="modal">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit product Modal End -->
+
+    <!-- latest jquery-->
+    <script src="../assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- jquery ui-->
+    <script src="../assets/js/jquery-ui.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap-notify.min.js"></script>
+    <script src="../assets/js/bootstrap/popper.min.js"></script>
+
+    <!-- feather icon js-->
+    <script src="../assets/js/feather/feather.min.js"></script>
+    <script src="../assets/js/feather/feather-icon.js"></script>
+
+    <!-- Lazyload Js -->
+    <script src="../assets/js/lazysizes.min.js"></script>
+
+    <!-- Slick js-->
+    <script src="../assets/js/slick/slick.js"></script>
+    <script src="../assets/js/slick/custom_slick.js"></script>
+
+    <!-- Apexcharts Js -->
+    <script src="../assets/js/apexchart.js"></script>
+    <script src="../assets/js/custom-chart.js"></script>
+
+    <!-- Nav & tab upside js -->
+    <script src="../assets/js/nav-tab.js"></script>
+
+    <!-- script js -->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- theme setting js -->
+    <script src="../assets/js/theme-setting.js"></script>
+
+</body>
+
+
+<!-- Mirrored from themes.pixelstrap.com/fastkart/front-end/seller-dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Oct 2024 13:57:23 GMT -->
+</html>
