@@ -15,7 +15,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-    <title>Fastkart - Add New Product</title>
+    <title>P•Mart - Thêm sản phẩm mới</title>
 
     <!-- Google font -->
     <link
@@ -94,7 +94,7 @@
                                     placeholder="Search Fastkart .." name="q" title="" autofocus>
                                 <i class="close-search" data-feather="x"></i>
                                 <div class="spinner-border Typeahead-spinner" role="status">
-                                    <span class="sr-only">Loading...</span>
+                                    <span class="sr-only">Vui lòng chờ...</span>
                                 </div>
                             </div>
                             <div class="Typeahead-menu"></div>
@@ -260,15 +260,15 @@
                                 <li class="sidebar-list">
                                     <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
                                         <i class="ri-list-check-2"></i>
-                                        <span>Phân loại sản phẩm</span>
+                                        <span>Danh mục sản phẩm</span>
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="category.html">Danh sách phân loại</a>
+                                            <a href="category.html">Danh sách các danh mục</a>
                                         </li>
 
                                         <li>
-                                            <a href="add-new-category.html">Thêm phân loại mới</a>
+                                            <a href="add-new-category.html">Thêm danh mục mới</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -333,7 +333,7 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="order-list.html">Danh sách đơn hàng</a>
+                                            <a href="order-list.html">Danh sách đặt hàng</a>
                                         </li>
                                         <li>
                                             <a href="order-detail.html">Chi tiết đơn hàng</a>
@@ -344,6 +344,7 @@
                                     </ul>
                                 </li>
 
+                                <!--
                                 <li class="sidebar-list">
                                     <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
                                         <i class="ri-focus-3-line"></i>
@@ -359,6 +360,7 @@
                                         </li>
                                     </ul>
                                 </li>
+                                -->
 
                                 <li class="sidebar-list">
                                     <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
@@ -440,52 +442,51 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="row">
-                                <div class="col-sm-8 m-auto">
+                                <div class="col-xxl-8 col-lg-10 m-auto">
+                                    
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="card-header-2">
-                                                <h5>Product Information</h5>
+                                                <h5>Thông tin sản phẩm</h5>
                                             </div>
 
                                             <form class="theme-form theme-form-2 mega-form">
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="form-label-title col-sm-3 mb-0">Product
-                                                        Name</label>
+                                                    <label class="form-label-title col-sm-3 mb-0">Tên sản phẩm</label>
                                                     <div class="col-sm-9">
                                                         <input class="form-control" type="text"
-                                                            placeholder="Product Name">
+                                                            placeholder="Tên sản phẩm">
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="col-sm-3 col-form-label form-label-title">Product
-                                                        Type</label>
+                                                    <label class="col-sm-3 col-form-label form-label-title">Phân loại sản phẩm</label>
                                                     <div class="col-sm-9">
                                                         <select class="js-example-basic-single w-100" name="state">
-                                                            <option disabled>Static Menu</option>
-                                                            <option>Simple</option>
-                                                            <option>Classified</option>
+                                                            <option disabled>Phân Loại</option>
+                                                            <option>Đơn giản</option>
+                                                            <option>Chi tiết</option>
                                                         </select>
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-4 row align-items-center">
                                                     <label
-                                                        class="col-sm-3 col-form-label form-label-title">Category</label>
+                                                        class="col-sm-3 col-form-label form-label-title">Danh mục sản phẩm</label>
                                                     <div class="col-sm-9">
                                                         <select class="js-example-basic-single w-100" name="state">
-                                                            <option disabled>Category Menu</option>
-                                                            <option>Electronics</option>
-                                                            <option>TV & Appliances</option>
-                                                            <option>Home & Furniture</option>
+                                                            <option disabled>Danh mục</option>
+                                                            <option>Đồ điện tử</option>
+                                                            <option>TV & Thiết bị gia dụng</option>
+                                                            <option>Nội thất & Đồ gia dụng</option>
+                                                            <option>Trẻ em & em bé</option>
+                                                            <option>Sức khoẻ & Làm đẹp</option>
                                                             <option>Another</option>
-                                                            <option>Baby & Kids</option>
-                                                            <option>Health, Beauty & Perfumes</option>
-                                                            <option>Uncategorized</option>
                                                         </select>
                                                     </div>
                                                 </div>
 
+                                                <!--
                                                 <div class="mb-4 row align-items-center">
                                                     <label
                                                         class="col-sm-3 col-form-label form-label-title">Subcategory</label>
@@ -501,13 +502,15 @@
                                                         </select>
                                                     </div>
                                                 </div>
+                                                -->
 
+                                                <!--
                                                 <div class="mb-4 row align-items-center">
                                                     <label
-                                                        class="col-sm-3 col-form-label form-label-title">Brand</label>
+                                                        class="col-sm-3 col-form-label form-label-title">Thương hiệu</label>
                                                     <div class="col-sm-9">
                                                         <select class="js-example-basic-single w-100">
-                                                            <option disabled>Brand Menu</option>
+                                                            <option disabled>Thương hiệu</option>
                                                             <option value="puma">Puma</option>
                                                             <option value="hrx">HRX</option>
                                                             <option value="roadster">Roadster</option>
@@ -515,7 +518,9 @@
                                                         </select>
                                                     </div>
                                                 </div>
+                                                -->
 
+                                                <!--
                                                 <div class="mb-4 row align-items-center">
                                                     <label class="col-sm-3 col-form-label form-label-title">Unit</label>
                                                     <div class="col-sm-9">
@@ -526,19 +531,20 @@
                                                         </select>
                                                     </div>
                                                 </div>
+                                                -->
+
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="col-sm-3 col-form-label form-label-title">Tags</label>
+                                                    <label class="col-sm-3 col-form-label form-label-title">Thẻ </label>
                                                     <div class="col-sm-9">
                                                         <div class="bs-example">
-                                                            <input type="text" class="form-control"
-                                                                placeholder="Type tag & hit enter" id="#inputTag"
+                                                            <input type="text" class="form-control" placeholder="Gắn thẻ sản phẩm" id="#inputTag"
                                                                 data-role="tagsinput">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="mb-4 row align-items-center">
                                                     <label
-                                                        class="col-sm-3 col-form-label form-label-title">Exchangeable</label>
+                                                        class="col-sm-3 col-form-label form-label-title">Đổi & Trả</label>
                                                     <div class="col-sm-9">
                                                         <label class="switch">
                                                             <input type="checkbox"><span class="switch-state"></span>
@@ -547,7 +553,7 @@
                                                 </div>
                                                 <div class="row align-items-center">
                                                     <label
-                                                        class="col-sm-3 col-form-label form-label-title">Refundable</label>
+                                                        class="col-sm-3 col-form-label form-label-title">Hoàn tiền</label>
                                                     <div class="col-sm-9">
                                                         <label class="switch">
                                                             <input type="checkbox" checked=""><span
@@ -562,15 +568,14 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="card-header-2">
-                                                <h5>Description</h5>
+                                                <h5>Mô tả</h5>
                                             </div>
 
                                             <form class="theme-form theme-form-2 mega-form">
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <div class="row">
-                                                            <label class="form-label-title col-sm-3 mb-0">Product
-                                                                Description</label>
+                                                            <label class="form-label-title col-sm-3 mb-0">Mô tả sản phẩm</label>
                                                             <div class="col-sm-9">
                                                                 <div id="editor"></div>
                                                             </div>
@@ -584,13 +589,13 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="card-header-2">
-                                                <h5>Product Images</h5>
+                                                <h5>Hình ảnh sản phẩm</h5>
                                             </div>
 
                                             <form class="theme-form theme-form-2 mega-form">
                                                 <div class="mb-4 row align-items-center">
                                                     <label
-                                                        class="col-sm-3 col-form-label form-label-title">Images</label>
+                                                        class="col-sm-3 col-form-label form-label-title">Hình ảnh</label>
                                                     <div class="col-sm-9">
                                                         <input class="form-control form-choose" type="file"
                                                             id="formFile" multiple>
@@ -598,8 +603,7 @@
                                                 </div>
 
                                                 <div class="row align-items-center">
-                                                    <label class="col-sm-3 col-form-label form-label-title">Thumbnail
-                                                        Image</label>
+                                                    <label class="col-sm-3 col-form-label form-label-title">Hình ảnh thu nhỏ</label>
                                                     <div class="col-sm-9">
                                                         <input class="form-control form-choose" type="file"
                                                             id="formFileMultiple1" multiple>
@@ -612,16 +616,14 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="card-header-2">
-                                                <h5>Product Videos</h5>
+                                                <h5>Giới thiệu sản phẩm</h5>
                                             </div>
 
                                             <form class="theme-form theme-form-2 mega-form">
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="col-sm-3 col-form-label form-label-title">Video
-                                                        Provider</label>
+                                                    <label class="col-sm-3 col-form-label form-label-title">Nhà cung cấp đoạn phim</label>
                                                     <div class="col-sm-9">
                                                         <select class="js-example-basic-single w-100" name="state">
-                                                            <option>Vimeo</option>
                                                             <option>Youtube</option>
                                                             <option>Dailymotion</option>
                                                             <option>Vimeo</option>
@@ -630,27 +632,26 @@
                                                 </div>
 
                                                 <div class="row align-items-center">
-                                                    <label class="form-label-title col-sm-3 mb-0">Video
-                                                        Link</label>
+                                                    <label class="form-label-title col-sm-3 mb-0">Liên kết</label>
                                                     <div class="col-sm-9">
                                                         <input class="form-control" type="text"
-                                                            placeholder="Video Link">
+                                                            placeholder="Liên kết Video">
                                                     </div>
                                                 </div>
                                             </form>
                                         </div>
                                     </div>
-
+                                    
+                                    <!--
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="card-header-2">
-                                                <h5>Product variations</h5>
+                                                <h5>Các loại hình khác của sản phẩm</h5>
                                             </div>
 
                                             <form class="theme-form theme-form-2 mega-form">
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="form-label-title col-sm-3 mb-0">Option
-                                                        Name</label>
+                                                    <label class="form-label-title col-sm-3 mb-0">Option Name</label>
                                                     <div class="col-sm-9">
                                                         <select class="js-example-basic-single w-100" name="state">
                                                             <option>Color</option>
@@ -660,10 +661,9 @@
                                                         </select>
                                                     </div>
                                                 </div>
-
+                                                
                                                 <div class="row align-items-center">
-                                                    <label class="col-sm-3 col-form-label form-label-title">Option
-                                                        Value</label>
+                                                    <label class="col-sm-3 col-form-label form-label-title">Option Value</label>
                                                     <div class="col-sm-9">
                                                         <div class="bs-example">
                                                             <input type="text" class="form-control"
@@ -677,32 +677,32 @@
                                             <a href="#" class="add-option"><i class="ri-add-line me-2"></i> Add Another
                                                 Option</a>
                                         </div>
+                                        
                                     </div>
+                                    -->
 
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="card-header-2">
-                                                <h5>Shipping</h5>
+                                                <h5>Vận chuyển</h5>
                                             </div>
 
                                             <form class="theme-form theme-form-2 mega-form">
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="form-label-title col-sm-3 mb-0">Weight
-                                                        (kg)</label>
+                                                    <label class="col-sm-3 col-form-label form-label-title">Cân nặng (kg)</label>
                                                     <div class="col-sm-9">
                                                         <input class="form-control" type="number" placeholder="Weight">
                                                     </div>
                                                 </div>
 
                                                 <div class="row align-items-center">
-                                                    <label class="col-sm-3 col-form-label form-label-title">Dimensions
-                                                        (cm)</label>
+                                                    <label class="col-sm-3 col-form-label form-label-title">Kích thước (cm)</label>
                                                     <div class="col-sm-9">
-                                                        <select class="js-example-basic-single w-100" name="state">
-                                                            <option>Length</option>
-                                                            <option>Width</option>
-                                                            <option>Height</option>
-                                                        </select>
+                                                        <div class="col-sm-15">
+                                                            <input type="number" class="form-control" placeholder="Chiều dài">
+                                                            <input type="number" class="form-control" placeholder="Chiều rộng">
+                                                            <input type="number" class="form-control" placeholder="Chiều cao">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </form>
@@ -712,35 +712,43 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="card-header-2">
-                                                <h5>Product Price</h5>
+                                                <h5>Chi phí sản phẩm</h5>
                                             </div>
 
                                             <form class="theme-form theme-form-2 mega-form">
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="col-sm-3 form-label-title">price</label>
+                                                    <label class="col-sm-3 col-form-label form-label-title">Giá bán (VNĐ)</label>
                                                     <div class="col-sm-9">
                                                         <input class="form-control" type="number" placeholder="0">
                                                     </div>
                                                 </div>
+                                                <!--
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="col-sm-3 form-label-title">Compare at
-                                                        price</label>
+                                                    <label class="col-sm-3 form-label-title">Compare at price</label>
                                                     <div class="col-sm-9">
                                                         <input class="form-control" type="number" placeholder="0">
                                                     </div>
                                                 </div>
+                                                -->
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="col-sm-3 form-label-title">Cost per item</label>
-                                                    <div class="col-sm-5">
+                                                    <label class="col-sm-3 col-form-label form-label-title">Giá vốn (VNĐ)</label>
+                                                    <div class="col-sm-9">
                                                         <input class="form-control" type="number" placeholder="0">
                                                     </div>
-                                                    <div class="col-sm-2">
-                                                        <label>Margin:</label>
-                                                        <span>25%</span>
-                                                    </div>
-                                                    <div class="col-sm-2">
-                                                        <label>Profit:</label>
-                                                        <span>$5</span>
+                                                </div>
+
+                                                <div class="mb-4 row align-items-center">
+                                                    <label class="col-sm-3 col-form-label form-label-title">Tỷ suất lợi nhuận (%)</label>
+                                                    <div class="col-sm-9">
+                                                        <input class="form-control" type="number" placeholder="0">
+                                                    </div> 
+                                                </div>
+
+                                                <div class="mb-4 row align-items-center">
+                                                    <label class="col-sm-3 col-form-label form-label-title">Lợi nhuận (%):</label>
+                                                        <div class="col-sm-9">
+                                                            <input class="form-control" type="number" placeholder="0">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </form>
@@ -750,24 +758,22 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="card-header-2">
-                                                <h5>Product Inventory</h5>
+                                                <h5>Sản phẩm tồn kho</h5>
                                             </div>
-
                                             <form class="theme-form theme-form-2 mega-form">
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="form-label-title col-sm-3 mb-0">SKU</label>
+                                                    <label class="col-sm-3 col-form-label form-label-title">Mã sản phẩm</label>
                                                     <div class="col-sm-9">
                                                         <input class="form-control" type="text">
                                                     </div>
                                                 </div>
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="col-sm-3 col-form-label form-label-title">Stock
-                                                        Status</label>
+                                                    <label class="col-sm-3 col-form-label form-label-title">Tình trạng sản phẩm</label>
                                                     <div class="col-sm-9">
                                                         <select class="js-example-basic-single w-100" name="state">
-                                                            <option>In Stock</option>
-                                                            <option>Out Of Stock</option>
-                                                            <option>On Backorder</option>
+                                                            <option>Còn hàng</option>
+                                                            <option>Hết hàng</option>
+                                                            <option>Hàng sắp về</option>
                                                         </select>
                                                     </div>
                                                 </div>
@@ -775,18 +781,20 @@
                                             <table class="table variation-table table-responsive-sm">
                                                 <thead>
                                                     <tr>
-                                                        <th scope="col">Variant</th>
-                                                        <th scope="col">Price</th>
-                                                        <th scope="col">SKU</th>
-                                                        <th scope="col">Quantity</th>
+                                                        <th scope="col">Màu sắc</th>
+                                                        <th scope="col">Mã tồn kho</th>
+                                                        <th scope="col">Giá bán</th>
+                                                        <th scope="col">Số lượng</th>
                                                         <th scope="col"></th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>Red</td>
                                                         <td>
-                                                            <input class="form-control" type="number" placeholder="0">
+                                                            <input class="form-control" type="text">
+                                                        </td>
+                                                        <td>
+                                                            <input class="form-control" type="text">
                                                         </td>
                                                         <td>
                                                             <input class="form-control" type="number" placeholder="0">
@@ -804,9 +812,33 @@
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>Blue</td>
+                                                        <td>
+                                                            <input class="form-control" type="text">
+                                                        </td>
+                                                        <td>
+                                                            <input class="form-control" type="text">
+                                                        </td>
                                                         <td>
                                                             <input class="form-control" type="number" placeholder="0">
+                                                        </td>
+                                                        <td>
+                                                            <input class="form-control" type="number" placeholder="0">
+                                                        </td>
+                                                        <td>
+                                                            <ul class="order-option">
+                                                                <li><a href="javascript:void(0)" data-toggle="modal"
+                                                                        data-target="#deleteModal"><i
+                                                                            class="ri-delete-bin-line"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <input class="form-control" type="text">
+                                                        </td>
+                                                        <td>
+                                                            <input class="form-control" type="text">
                                                         </td>
                                                         <td>
                                                             <input class="form-control" type="number" placeholder="0">
@@ -831,19 +863,19 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="card-header-2">
-                                                <h5>Link Products</h5>
+                                                <h5>Liên kết sản phẩm</h5>
                                             </div>
 
                                             <form class="theme-form theme-form-2 mega-form">
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="form-label-title col-sm-3 mb-0">Upsells</label>
+                                                    <label class="form-label-title col-sm-3 mb-0">Các sản phẩm cùng loại</label>
                                                     <div class="col-sm-9">
                                                         <input class="form-control" type="search">
                                                     </div>
                                                 </div>
 
                                                 <div class="row align-items-center">
-                                                    <label class="form-label-title col-sm-3 mb-0">Cross-Sells</label>
+                                                    <label class="form-label-title col-sm-3 mb-0">Sản phẩm liên quan</label>
                                                     <div class="col-sm-9">
                                                         <input class="form-control" type="search">
                                                     </div>
@@ -855,43 +887,48 @@
                                     <div class="card">
                                         <div class="card-body">
                                             <div class="card-header-2">
-                                                <h5>Search engine listing</h5>
+                                                <h5>Công cụ tìm kiếm</h5>
                                             </div>
 
                                             <div class="seo-view">
-                                                <span class="link">https://fastkart.com</span>
-                                                <h5>Buy fresh vegetables & Fruits online at best price</h5>
-                                                <p>Online Vegetable Store - Buy fresh vegetables & Fruits online at best
-                                                    prices. Order online and get free delivery.</p>
+                                                <span class="link">https://p-mart.com</span>
+                                                <h5>Mua rau củ quả tươi ngon, giá tốt mỗi ngày!</h5>
+                                                <p>Đặt rau củ quả tươi trực tuyến - Giao hàng miễn phí tận nhà!</p>
                                             </div>
 
                                             <form class="theme-form theme-form-2 mega-form">
                                                 <div class="mb-4 row align-items-center">
-                                                    <label class="form-label-title col-sm-3 mb-0">Page title</label>
+                                                    <label class="form-label-title col-sm-3 mb-0">Tiêu đề trang</label>
                                                     <div class="col-sm-9">
-                                                        <input class="form-control" type="search"
-                                                            placeholder="Fresh Fruits">
+                                                        <input class="form-control" type="search">
                                                     </div>
                                                 </div>
 
                                                 <div class="mb-4 row">
-                                                    <label class="form-label-title col-sm-3 mb-0">Meta
-                                                        description</label>
+                                                    <label class="form-label-title col-sm-3 mb-0">Mô tả</label>
                                                     <div class="col-sm-9">
                                                         <textarea class="form-control" rows="3"></textarea>
                                                     </div>
                                                 </div>
 
                                                 <div class="row">
-                                                    <label class="form-label-title col-sm-3 mb-0">URL handle</label>
+                                                    <label class="form-label-title col-sm-3 mb-0">Đường dẫn liên kết</label>
                                                     <div class="col-sm-9">
                                                         <input class="form-control" type="search"
-                                                            placeholder="https://fastkart.com/fresh-veggies">
+                                                            placeholder="https://p-mart.com/...">
                                                     </div>
                                                 </div>
                                             </form>
                                         </div>
                                     </div>
+                                    <form class="theme-form theme-form-2 mega-form">
+                                        <div class="mb-4 row justify-content-center">
+                                            <div class="col-12 d-flex justify-content-center">
+                                                <button class="btn text-white theme-bg-color" 
+                                                style="padding: 10px 20px; font-size: 1.2rem; margin-bottom: 20px;">Thêm sản phẩm</button>
+                                            </div>  
+                                        </div> 
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -904,7 +941,8 @@
                     <footer class="footer">
                         <div class="row">
                             <div class="col-md-12 footer-copyright text-center">
-                                <p class="mb-0">Copyright 2022 © Fastkart theme by pixelstrap</p>
+                                <p class="mb-0">Bản quyền © 2024 P•Mart.</p>
+                                <p class="mb-0">Chúng tôi trân trọng từng sự lựa chọn của bạn – cùng đồng hành trên mọi chặng đường mua sắm.</p>
                             </div>
                         </div>
                     </footer>
@@ -923,13 +961,13 @@
         <div class="modal-dialog  modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body">
-                    <h5 class="modal-title" id="staticBackdropLabel">Logging Out</h5>
-                    <p>Are you sure you want to log out?</p>
+                    <h5 class="modal-title" id="staticBackdropLabel">Đăng xuất</h5>
+                    <p>Bạn có chắc chắn muốn đăng xuất không?</p>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
-                    <div class="button-box">
-                        <button type="button" class="btn btn--no" data-bs-dismiss="modal">No</button>
-                        <button type="button" class="btn  btn--yes btn-primary">Yes</button>
+                   <div class="button-box">
+                        <button type="button" class="btn btn--no" data-bs-dismiss="modal">Không</button>
+                        <button type="button" class="btn  btn--yes btn-primary">Có</button>
                     </div>
                 </div>
             </div>
