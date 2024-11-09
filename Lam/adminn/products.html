@@ -494,7 +494,7 @@
                                                                 </li>
 
                                                                 <li>
-                                                                    <a href="javascript:void(0)">
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#edit-product">
                                                                         <i class="ri-pencil-line"></i>
                                                                     </a>
                                                                 </li>
@@ -991,6 +991,65 @@
         </div>
     </div>
     <!-- Modal End -->
+
+    <!-- Edit Product Modal Start -->
+    <div class="modal fade theme-modal" id="edit-product" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">Chỉnh Sửa Sản Phẩm</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="companyName" class="form-label">Tên Sản Phẩm</label>
+                            <input type="text" class="form-control" id="companyName" value="Bánh Quy">
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="emailAddress" class="form-label">bla bla bla</label>
+                            <input type="email" class="form-control" id="emailAddress" value="joshuadbass@rhyta.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="country" class="form-label">Quốc Gia / Vùng</label>
+                            <input type="text" class="form-control" id="country" value="107 Veltri Drive">
+                        </div>
+                        <div class="mb-3">
+                            <label for="established" class="form-label">Năm Thành Lập</label>
+                            <input type="email" class="form-control" id="established" value="2022">
+                        </div> -->
+                        <div class="mb-3">
+                            <label for="employees" class="form-label">Giá Tiền</label>
+                            <input type="text" class="form-control" id="employees" value="1.168.000 VNĐ">
+                        </div> 
+                        <div class="mb-3"> 
+                            <label for="category" class="form-label">Danh Mục</label>
+                            <input type="email" class="form-control" id="category" value="Tạp Hóa">
+                        </div>
+                        <!-- <div class="mb-3">
+                            <label for="street" class="form-label">Địa Chỉ Phố</label>
+                            <input type="text" class="form-control" id="street" value="234 High St">
+                        </div>
+                        <div class="mb-3">
+                            <label for="city" class="form-label">Thành Phố / Tỉnh</label>
+                            <input type="email" class="form-control" id="city" value="107 Veltri Drive">
+                        </div>
+                        <div class="mb-3">
+                            <label for="zip" class="form-label">Mã Bưu Chính</label>
+                            <input type="text" class="form-control" id="zip" value="B23 6SN">
+                        </div> -->
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light" data-bs-dismiss="modal">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit product Modal End -->
 
     <!-- Delete Modal Box Start -->
     <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle" aria-hidden="true" tabindex="-1">
