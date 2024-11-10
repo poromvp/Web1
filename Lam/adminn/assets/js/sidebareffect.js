@@ -45,8 +45,8 @@
         backGroundGradient.addColorStop(1, "#000");
 
         overlayGradient = context.createLinearGradient(0, height, width, 0);
-        overlayGradient.addColorStop(0.25, "teal");
-        overlayGradient.addColorStop(0.75, "orange");
+        overlayGradient.addColorStop(0.25, "purple");
+        overlayGradient.addColorStop(0.75, "purple");
     }
 
     function render() {
