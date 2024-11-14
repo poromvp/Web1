@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Content</title>
+    <style>
+        .content {
+            border: 1px solid #ccc;
+            padding: 8px;
+            min-width: 200px;
+            display: inline-block;
+        }
+        .editButton {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <span class="content" contenteditable="false">Click the button to edit this text.</span>
+    <button class="editButton">Edit</button>
+</div>
+<div>
+    <span class="content" contenteditable="false">This is another line of text.</span>
+    <button class="editButton">Edit</button>
+</div>
+<div>
+    <span class="content" contenteditable="false">Yet another editable line.</span>
+    <button class="editButton">Edit</button>
+</div>
+
+<script>
+    document.querySelectorAll(".editButton").forEach((button, index) => {
+        const content = document.querySelectorAll(".content")[index];
+        
+        button.addEventListener("click", () => {
+            content.contentEditable = "true";
+            content.focus();
+        });
+
+        content.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                content.contentEditable = "false";
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

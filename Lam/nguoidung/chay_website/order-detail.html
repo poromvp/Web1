@@ -183,7 +183,7 @@
 
                             <div class="search-box" style="margin-left: 150px;">
                                 <div class="input-group">
-                                    <input type="search" class="form-control" placeholder="Tìm kiếm những sản phẩm khác...">
+                                    <input type="search" class="form-control nhay" placeholder="Tìm kiếm những sản phẩm khác...">
                                     <button class="btn" type="button" id="button-addon2">
                                         <a href="search.html" style="text-decoration: none; position: absolute; padding: 30px 30px"></a>
                                         <i data-feather="search"></i>
@@ -1079,32 +1079,32 @@
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="nav-item dropdown new-nav-item">
-                                        <label class="new-dropdown">Mới</label>
-                                        <a class="nav-link dropdown-toggle" href="javascript:void(0)"
-                                            data-bs-toggle="dropdown">Khác</a>
-                                        <ul class="dropdown-menu">
-                                            <!--<li>
-                                                <a class="dropdown-item" href="seller-become.html">Trở thành nhà bán hàng</a>
-                                            </li>-->
-                                            <li>
-                                                <a class="dropdown-item" href="seller-grid.html">Danh sách các nhãn hàng</a>
-                                            </li>
-                                            <!--<li>
-                                                <a class="dropdown-item" href="seller-detail.html">Seller Detail</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="seller-detail-2.html">Seller Detail
-                                                    2</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="seller-grid.html">Seller Grid</a>
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="seller-grid-2.html">Seller Grid 2</a>
-                                            </li>-->
-                                        </ul>
-                                    </li>
+                                    <!--<li class="nav-item dropdown new-nav-item">
+                                            <label class="new-dropdown">Mới</label>
+                                            <a class="nav-link dropdown-toggle" href="javascript:void(0)"
+                                                data-bs-toggle="dropdown">Khác</a>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-become.html">Trở thành nhà bán hàng</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-grid.html">Danh sách các nhãn hàng</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-detail.html">Seller Detail</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-detail-2.html">Seller Detail
+                                                        2</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-grid.html">Seller Grid</a>
+                                                </li>
+                                                <li>
+                                                    <a class="dropdown-item" href="seller-grid-2.html">Seller Grid 2</a>
+                                                </li>
+                                            </ul>
+                                        </li>-->
                                 </ul>
                             </div>
                         </div>
@@ -1890,6 +1890,17 @@
 
     <!-- theme setting js -->
     <script src="../assets/js/theme-setting.js"></script>
+
+
+    <script>
+        let search = document.querySelector(".nhay");
+                search.addEventListener("keyup", function (e) {
+                    if (e.keyCode === 13) {
+                        e.preventDefault();
+                        window.location.href = "shop-left-sidebar.html";
+                    }
+                });
+    </script>
 </body>
 
 
