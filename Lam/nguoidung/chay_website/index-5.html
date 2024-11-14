@@ -98,7 +98,7 @@
                                                 <i class="bi bi-search icon-search"></i>
                                             </a>
                                         </button>
-                                        <input type="text" class="form-control"
+                                        <input type="text" class="form-control nhay"
                                             placeholder="Tìm kiếm những sản phẩm khác ...">
                                             <button class="btn search-button" type="button">
                                                 <a href="search.html" style="text-decoration: none; position: absolute; padding: 50px 50px"></a>
@@ -6937,6 +6937,17 @@
 
     <!-- theme setting js -->
     <script src="../assets/js/theme-setting.js"></script>
+
+    <script>
+        let search = document.querySelector(".nhay");
+                search.addEventListener("keyup", function (e) {
+                    if (e.keyCode === 13) {
+                        e.preventDefault();
+                        window.location.href = "shop-left-sidebar.html";
+                    }
+                });
+    </script>
+        
 </body>
 
 
