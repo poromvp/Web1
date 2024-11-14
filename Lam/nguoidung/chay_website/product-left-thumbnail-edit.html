@@ -1305,10 +1305,17 @@
                         <div class="col-xl-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="right-box-contain">
                                 <h6 class="offer-top">30% Off</h6>
-                                <h2 class="name">Snack vị khoai tây tự nhiên classic Lay’s gói (1 Gói)</h2>
+                                <h2 class="name sua" contenteditable="false">Snack vị khoai tây tự nhiên classic Lay’s gói (1 Gói)</h2>
+                                <h2 style="display: inline-block;">
+                                    <button  class="editButton"><i class="bi bi-pencil-square"></i></button>
+
+                                </h2>
                                 <div class="price-rating">
-                                    <h3 class="theme-color price">20.000 VND<del class="text-content">22.000 VND</del> <span
+                                    <h3 class="theme-color price sua" contenteditable="false">20.000 VND<del class="text-content">22.000 VND</del> <span
                                             class="offer theme-color">(8% off)</span></h3>
+                                            <h3>
+                                                <button  class="editButton"><i class="bi bi-pencil-square"></i></button>
+                                            </h3>
                                     <div class="product-rating custom-rate">
                                         <ul class="rating">
                                             <li>
@@ -3386,6 +3393,24 @@
                 });
     </script>
 
+
+<script>
+    document.querySelectorAll(".editButton").forEach((button, index) => {
+        const sua = document.querySelectorAll(".sua")[index];
+        
+        button.addEventListener("click", () => {
+            sua.contentEditable = "true";
+            sua.focus();
+        });
+
+        sua.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                sua.contentEditable = "false";
+            }
+        });
+    });
+</script>
 </body>
 
 
