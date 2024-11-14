@@ -81,7 +81,7 @@
                         <div class="Typeahead Typeahead--twitterUsers">
                             <div class="u-posRelative">
                                 <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
-                                    placeholder="Search Fastkart .." name="q" title="" autofocus>
+                                    placeholder="Tìm kiếm .." name="q" title="" autofocus>
                                 <i class="close-search" data-feather="x"></i>
                                 <div class="spinner-border Typeahead-spinner" role="status">
                                     <span class="sr-only">Loading...</span>
@@ -138,11 +138,11 @@
                             </ul>
                         </li>
 
-                        <li>
+                        <!-- <li>
                             <div class="mode">
                                 <i class="ri-moon-line"></i>
                             </div>
-                        </li>
+                        </li> -->
                         <li class="profile-nav onhover-dropdown pe-0 me-0">
                             <div class="media profile-media">
                                 <img class="user-profile rounded-circle" src="assets/images/users/4.jpg" alt="">
@@ -416,7 +416,7 @@
                                     <div class="title-header option-title">
                                         <h5>Tất cả thuộc tính</h5>
                                         <form class="d-inline-flex">
-                                            <a href="add-new-category.html" class="align-items-center btn btn-theme d-flex">
+                                            <a href="add-new-attributes.html" class="align-items-center btn btn-theme d-flex">
                                                 <i data-feather="plus-square"></i>Thêm mới
                                             </a>
                                         </form>
@@ -426,7 +426,7 @@
                                         <table class="table all-package theme-table" id="table_id">
                                             <thead>
                                                 <tr>
-                                                    <th>Tên sản phẩm</th>
+                                                    <th>Tên thuộc tính</th>
                                                     <th>Giá trị</th>
                                                     <th>Lựa chọn</th>
                                                 </tr>
@@ -441,7 +441,8 @@
                                                     <td>
                                                         <ul>
                                                             <li>
-                                                                <a href="javascript:void(0)">
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                data-bs-target="#edit-attributes">
                                                                     <i class="ri-pencil-line"></i>
                                                                 </a>
                                                             </li>
@@ -464,7 +465,8 @@
                                                     <td>
                                                         <ul>
                                                             <li>
-                                                                <a href="javascript:void(0)">
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                data-bs-target="#edit-attributes">
                                                                     <i class="ri-pencil-line"></i>
                                                                 </a>
                                                             </li>
@@ -487,7 +489,8 @@
                                                     <td>
                                                         <ul>
                                                             <li>
-                                                                <a href="javascript:void(0)">
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                data-bs-target="#edit-attributes">
                                                                     <i class="ri-pencil-line"></i>
                                                                 </a>
                                                             </li>
@@ -510,7 +513,8 @@
                                                     <td>
                                                         <ul>
                                                             <li>
-                                                                <a href="javascript:void(0)">
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                data-bs-target="#edit-attributes">
                                                                     <i class="ri-pencil-line"></i>
                                                                 </a>
                                                             </li>
@@ -533,7 +537,8 @@
                                                     <td>
                                                         <ul>
                                                             <li>
-                                                                <a href="javascript:void(0)">
+                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
+                                                                data-bs-target="#edit-attributes">
                                                                     <i class="ri-pencil-line"></i>
                                                                 </a>
                                                             </li>
@@ -571,17 +576,48 @@
         </div>
         <!-- Page Body End -->
 
+        <!-- Edit Attributes Modal Start -->
+    <div class="modal fade theme-modal" id="edit-attributes" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel3">Chỉnh Sửa Thuộc Tính</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="attributesname" class="form-label">Tên Thuộc Tính</label>
+                            <input type="text" class="form-control" id="attributesname" value="Màu sắc">
+                        </div>
+                        <div class="mb-3">
+                            <label for="attributesvalues" class="form-label">Giá Trị</label>
+                            <input type="text" class="form-control" id="attributesvalues" value="Xanh, Đỏ, Trắng">
+                        </div> 
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light" data-bs-dismiss="modal">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edit Attributes Modal End -->
+
         <!-- Modal Start -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
             <div class="modal-dialog  modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
-                        <h5 class="modal-title" id="staticBackdropLabel">Logging Out</h5>
-                        <p>Are you sure you want to log out?</p>
+                        <h5 class="modal-title" id="staticBackdropLabel">Đăng xuất</h5>
+                        <p>Bạn có chắc là muốn dăng xuất</p>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         <div class="button-box">
-                            <button type="button" class="btn btn--no" data-bs-dismiss="modal">No</button>
-                            <button type="button" class="btn  btn--yes btn-primary">Yes</button>
+                            <button type="button" class="btn btn--no" data-bs-dismiss="modal">Không</button>
+                            <button type="button" class="btn  btn--yes btn-primary">Có</button>
                         </div>
                     </div>
                 </div>
@@ -595,21 +631,20 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header d-block text-center">
-                    <h5 class="modal-title w-100" id="exampleModalLabel22">Are You Sure ?</h5>
+                    <h5 class="modal-title w-100" id="exampleModalLabel22">Bạn có chắc không ?</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         <i class="fas fa-times"></i>
                     </button>
                 </div>
                 <div class="modal-body">
                     <div class="remove-box">
-                        <p>The permission for the use/group, preview is inherited from the object, object will create a
-                            new permission for this object</p>
+                        <p>Khi xóa thuộc tính này thì sẽ biến mất vĩnh viễn, bạn có thể tạo mới lại sau này</p>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-animation btn-sm fw-bold" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-animation btn-sm fw-bold" data-bs-dismiss="modal">Không</button>
                     <button type="button" class="btn btn-animation btn-sm fw-bold" data-bs-target="#exampleModalToggle2"
-                        data-bs-toggle="modal" data-bs-dismiss="modal">Yes</button>
+                        data-bs-toggle="modal" data-bs-dismiss="modal">Có</button>
                 </div>
             </div>
         </div>
