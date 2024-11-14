@@ -183,7 +183,7 @@
 
                                 <div class="search-box" style="margin-left: 150px;">
                                     <div class="input-group">
-                                        <input type="search" class="form-control" placeholder="Tìm kiếm những sản phẩm khác...">
+                                        <input type="search" class="form-control nhay" placeholder="Tìm kiếm những sản phẩm khác...">
                                         <button class="btn" type="button" id="button-addon2">
                                             <a href="search.html" style="text-decoration: none; position: absolute; padding: 30px 30px"></a>
                                             <i data-feather="search"></i>
@@ -1238,7 +1238,7 @@
                 <div id="collapseOne" class="accordion-collapse collapse show">
                     <div class="accordion-body">
                         <div class="form-floating theme-form-floating-2 search-box nuttimkiemnangcao" style="margin-left: 5%; width: 75%">
-                            <input type="search" class="form-control" id="search"
+                            <input type="search" class="form-control nhay" id="search"
                                 placeholder="Search ..">
                             <label for="search">Tìm kiếm</label>
                             
@@ -2686,6 +2686,15 @@
     <!-- theme setting js -->
     <script src="../assets/js/theme-setting.js"></script>
 
+    <script>
+        let search = document.querySelector(".nhay");
+                search.addEventListener("keyup", function (e) {
+                    if (e.keyCode === 13) {
+                        e.preventDefault();
+                        window.location.href = "shop-left-sidebar.html";
+                    }
+                });
+    </script>
 </body>
 
 
