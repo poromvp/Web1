@@ -2365,6 +2365,50 @@ table tbody .border-bottom-warning td {
 .custom-scrollbar::-webkit-scrollbar-thumb {
     background-color: rgba(68, 102, 242, 0.15)
 }
+/*
+.custom-pagination {
+    margin-top: calc(22px + 13*(100vw - 320px)/1600)
+}
+
+.custom-pagination .pagination {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: calc(6px + 7*(100vw - 320px)/1600)
+}
+
+.custom-pagination .pagination .page-item {
+    border-radius: 5px;
+    overflow: hidden
+}
+
+.custom-pagination .pagination .page-item:not(:first-child) .page-link {
+    margin: 0
+}
+
+.custom-pagination .pagination .page-item.active .page-link {
+    background-color: var(--theme-color);
+    border-color: var(--theme-color);
+    color: #fff
+}
+
+.custom-pagination .pagination .page-item .page-link {
+    color: #4a5568;
+    border: 1px solid rgba(0, 0, 0, 0)
+}
+
+.custom-pagination .pagination .page-item .page-link:hover {
+    border-radius: 5px;
+    border: 1px solid var(--theme-color);
+    background-color: unset
+}
+
+.custom-pagination .pagination .page-item .page-link:focus {
+    color: var(--theme-color);
+    background-color: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+    */
 
 .comment {
     color: #9f9ba5;
