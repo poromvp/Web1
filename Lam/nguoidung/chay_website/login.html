@@ -284,10 +284,10 @@
                                                 </div>
 
                                                 <div class="button-group">
-                                                    <a href="cart.html" class="btn btn-sm cart-button">Xem giỏ hàng</a>
-                                                    <a href="checkout.html" class="btn btn-sm cart-button theme-bg-color
-                                                    text-white">Thanh toán</a>
-                                                </div>
+                                            <a href="cart.html" class="btn btn-sm cart-button">Xem giỏ hàng</a>
+                                            <a href="checkout.html" class="btn btn-sm cart-button theme-bg-color
+                                                    text-white thanh-toan">Thanh toán</a> 
+                                        </div>
                                             </div>
                                         </div>
                                     </li>
@@ -1635,6 +1635,17 @@
     <script src="../assets/js/theme-setting.js"></script>
 
     <script>
+        let thanhtoan = document.querySelector(".thanh-toan");
+        thanhtoan.addEventListener("click", function (e) {
+            e.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
+
+            alert("Bạn cần phải đăng nhập mới thanh toán được");
+
+            if (confirm("Bạn có muốn chuyển đến trang đăng nhập không?")) {
+                window.location.href = "login.html";
+            }
+        });
+
         let search = document.querySelector(".nhay");
                 search.addEventListener("keyup", function (e) {
                     if (e.keyCode === 13) {
