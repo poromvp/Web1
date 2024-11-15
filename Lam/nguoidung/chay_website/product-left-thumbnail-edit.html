@@ -64,7 +64,10 @@
                                                 <div class="slider-image">
                                                     <img src="../assets/images/product/category/1n.jpg" id="img-1"
                                                         data-zoom-image="../assets/images/product/category/1n.jpg"
-                                                        class="img-fluid image_zoom_cls-0 blur-up lazyload" alt="">
+                                                        class="img-fluid image_zoom_cls-0 blur-up lazyload" alt="" >
+                                                        <i class="fa-solid fa-pen">
+                                                            <input type="file" onchange=>
+                                                        </i>
                                                 </div>
                                             </div>
 
@@ -73,6 +76,9 @@
                                                     <img src="../assets/images/product/category/2.jpg"
                                                         data-zoom-image="../assets/images/product/category/2.jpg"
                                                         class="img-fluid image_zoom_cls-1 blur-up lazyload" alt="">
+                                                        <i class="fa-solid fa-pen">
+                                                            <input type="file" onchange=>
+                                                        </i>
                                                 </div>
                                             </div>
 
@@ -115,7 +121,7 @@
                                             <div>
                                                 <div class="sidebar-image">
                                                     <img src="../assets/images/product/category/1n.jpg"
-                                                        class="img-fluid blur-up lazyload" alt="">
+                                                        class="img-fluid blur-up lazyload" alt="" >
                                                 </div>
                                             </div>
 
@@ -825,6 +831,23 @@
             }
         });
     });
+
+    function updateImage(input, index) {
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                // Cập nhật hình ảnh trong ô tương ứng
+                const thumbnail = document.querySelector(`.thumbnail[data-index="${index}"]`);
+                thumbnail.src = e.target.result;
+
+                // Nếu ô đang hiển thị được chọn, cập nhật ô thứ 5
+                const mainDisplay = document.getElementById('main-display');
+                if (mainDisplay.src === thumbnail.src) {
+                    mainDisplay.src = e.target.result;
+                }
+            };
+            reader.readAsDataURL(input.files[0]);
+        }
 </script>
 </body>
 
