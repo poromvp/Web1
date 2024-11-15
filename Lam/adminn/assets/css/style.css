@@ -2365,7 +2365,7 @@ table tbody .border-bottom-warning td {
 .custom-scrollbar::-webkit-scrollbar-thumb {
     background-color: rgba(68, 102, 242, 0.15)
 }
-
+/*
 .custom-pagination {
     margin-top: calc(22px + 13*(100vw - 320px)/1600)
 }
@@ -2408,6 +2408,7 @@ table tbody .border-bottom-warning td {
     -webkit-box-shadow: none;
     box-shadow: none
 }
+    */
 
 .comment {
     color: #9f9ba5;
