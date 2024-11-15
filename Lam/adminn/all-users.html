@@ -47,6 +47,12 @@
 
     <!-- App css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+    <!-- Icon của Font Awesome copy từ đây nha-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/them.css">
 </head>
 
 <body>
@@ -925,18 +931,41 @@
                             </div>
                         </div>
                     </div>
+                    <nav class="custom-pagination">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="javascript:void(0)" tabindex="-1">
+                                    <i class="fa-solid fa-angles-left"></i>
+                                </a>
+                            </li>
+                            <li class="page-item active">
+                                <a class="page-link" href="javascript:void(0)">1</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0)">2</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0)">3</a>
+                            </li>
+                            <li class="page-item">
+                                <a class="page-link" href="javascript:void(0)">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
                 <!-- All User Table Ends-->
 
                 <div class="container-fluid">
                     <!-- footer start-->
-                    <footer class="footer">
+                    <!-- <footer class="footer">
                         <div class="row">
                             <div class="col-md-12 footer-copyright text-center">
                                 <p class="mb-0">Copyright 2005 © P-Mart</p>
                             </div>
                         </div>
-                    </footer>
+                    </footer> -->
                     <!-- footer end-->
                 </div>
             </div>
@@ -968,14 +997,14 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header d-block text-center">
-                <h5 class="modal-title w-100" id="exampleModalLabel22">Bạn Có Chắc Không?</h5>
+                <h5 class="modal-title w-100" id="exampleModalLabel22">Khóa người dùng</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="remove-box">
-                    <p style="font-size: large;">Người dùng này sẽ bị <strong>khóa</strong> vĩnh viễn cho đến khi bạn mở lại</p>
+                    <p style="font-size: large;">Người dùng này sẽ bị <strong>khóa</strong> vĩnh viễn cho đến khi bạn mở lại, bạn có chắc là muốn khóa người dùng này không?</p>
                 </div>
             </div>
             <div class="modal-footer">
@@ -1041,6 +1070,9 @@
                                 </div>
                             </h3>
                         </div>
+                        <button style="margin-left: 30%; width: 200px; height: 30px; border-radius: 5px; margin-top: 40px;">
+                            <h6>Chỉnh sửa người dùng <i style="margin-left: 5px;" class="ri-pencil-line"></i></h6>
+                        </button>
                     </div>
                     <div>
                         <div style="display: inline-flex;">
