@@ -16753,7 +16753,7 @@ body.rtl .product-section-box .review-box .review-people .review-list li .people
 
 .custom-pagination .pagination .page-item .page-link:focus {
     color: var(--theme-color);
-    background-color: #fff;
+    background-color:#fff;
     -webkit-box-shadow: none;
     box-shadow: none
 }
@@ -35905,6 +35905,16 @@ body.rtl .menu-label {
     box-shadow: 0 0 9px rgba(0, 0, 0, .07)
 }
 
+.delivery-address-box :focus-within{
+    border-color: #9306cf;
+}
+
+
+
+.checkout-section .delivery-address-box :active {
+    border-color: #9306cf;
+}
+
 .checkout-section .delivery-address-box>div {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -35922,11 +35932,6 @@ body.rtl .menu-label {
     color: #fff;
     font-size: 12px;
     letter-spacing: .8px
-}
-
-[dir=rtl] .checkout-section .delivery-address-box>div .label {
-    right: unset;
-    left: 0
 }
 
 .checkout-section .delivery-address-box>div .form-check .form-check-input {

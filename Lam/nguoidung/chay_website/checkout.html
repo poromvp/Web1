@@ -30,9 +30,10 @@
 
     <!-- Template css -->
     <link id="color-link" rel="stylesheet" type="text/css" href="../assets/css/style.css">
-        <!-- Icon của Font Awesome copy từ đây nha-->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Icon của Font Awesome copy từ đây nha-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="theme-color-3 dark">
@@ -310,7 +311,7 @@
                                             <ul class="user-box-name">
                                                 <li class="product-box-contain">
                                                     <i></i>
-                                                    <a href="login.html">Đăng nhập</a>
+                                                    <a href="login.html">Tài khoản</a>
                                                 </li>
 
                                                 <li class="product-box-contain">
@@ -1087,7 +1088,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="breadcrumb-contain">
-                        <h2>Checkout</h2>
+                        <h2>Giỏ Hàng</h2>
                         <nav>
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item">
@@ -1095,7 +1096,7 @@
                                         <i class="fa-solid fa-house"></i>
                                     </a>
                                 </li>
-                                <li class="breadcrumb-item active">Checkout</li>
+                                <li class="breadcrumb-item active">Giỏ Hàng</li>
                             </ol>
                         </nav>
                     </div>
@@ -1125,6 +1126,11 @@
                                         <div class="checkout-title">
                                             <h4>Địa chỉ giao hàng</h4>
                                         </div>
+                                        <div class="form-floating mb-lg-3 mb-2 theme-form-floating">
+                                                    <button class="btn btn-sm theme-bg-color text-white" data-bs-toggle="modal"
+                                                    data-bs-target="#add-address">Thêm địa chỉ</button>
+                                         </div>
+                                        
 
                                         <div class="checkout-detail">
                                             <div class="row g-4">
@@ -1135,11 +1141,6 @@
                                                                 <input class="form-check-input" type="radio" name="jack"
                                                                     id="flexRadioDefault1">
                                                             </div>
-
-                                                            <div class="label">
-                                                                <label>Nhà riêng</label>
-                                                            </div>
-
                                                             <ul class="delivery-address-detail">
                                                                 <li>
                                                                     <h4 class="fw-500">Jack Jennas</h4>
@@ -1150,12 +1151,6 @@
                                                                             class="text-title">Địa chỉ
                                                                             : </span>8424 James Lane South San
                                                                         Francisco, CA 94080</p>
-                                                                </li>
-
-                                                                <li>
-                                                                    <h6 class="text-content"><span
-                                                                            class="text-title">Mã PIN
-                                                                            :</span> +380</h6>
                                                                 </li>
 
                                                                 <li>
@@ -1175,11 +1170,6 @@
                                                                 <input class="form-check-input" type="radio" name="jack"
                                                                     id="flexRadioDefault2" checked="checked">
                                                             </div>
-
-                                                            <div class="label">
-                                                                <label>Văn Phòng</label>
-                                                            </div>
-
                                                             <ul class="delivery-address-detail">
                                                                 <li>
                                                                     <h4 class="fw-500">Jack Jennas</h4>
@@ -1192,13 +1182,6 @@
                                                                         bld. 5/A, appt. 12
                                                                     </p>
                                                                 </li>
-
-                                                                <li>
-                                                                    <h6 class="text-content"><span
-                                                                            class="text-title">Mã Pin :</span>
-                                                                        +380</h6>
-                                                                </li>
-
                                                                 <li>
                                                                     <h6 class="text-content mb-0"><span
                                                                             class="text-title">SĐT
@@ -2069,7 +2052,7 @@
         <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel1">Add a new address</h5>
+                    <h5 class="modal-title" id="exampleModalLabel1">Thêm địa chỉ mới</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
@@ -2078,21 +2061,21 @@
                     <form>
                         <div class="form-floating mb-4 theme-form-floating">
                             <input type="text" class="form-control" id="fname" placeholder="Enter First Name">
-                            <label for="fname">First Name</label>
+                            <label for="fname">Tên</label>
                         </div>
                     </form>
 
                     <form>
                         <div class="form-floating mb-4 theme-form-floating">
                             <input type="text" class="form-control" id="lname" placeholder="Enter Last Name">
-                            <label for="lname">Last Name</label>
+                            <label for="lname">Họ</label>
                         </div>
                     </form>
 
                     <form>
                         <div class="form-floating mb-4 theme-form-floating">
                             <input type="email" class="form-control" id="email" placeholder="Enter Email Address">
-                            <label for="email">Email Address</label>
+                            <label for="email">Thêm số điện thoại</label>
                         </div>
                     </form>
 
@@ -2100,21 +2083,15 @@
                         <div class="form-floating mb-4 theme-form-floating">
                             <textarea class="form-control" placeholder="Leave a comment here" id="address"
                                 style="height: 100px"></textarea>
-                            <label for="address">Enter Address</label>
+                            <label for="address">Địa chỉ giao hàng</label>
                         </div>
                     </form>
 
-                    <form>
-                        <div class="form-floating mb-4 theme-form-floating">
-                            <input type="email" class="form-control" id="pin" placeholder="Enter Pin Code">
-                            <label for="pin">Pin Code</label>
-                        </div>
-                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-md" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn theme-bg-color btn-md text-white" data-bs-dismiss="modal">Save
-                        changes</button>
+                    <button type="button" class="btn btn-secondary btn-md" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn theme-bg-color btn-md text-white" data-bs-dismiss="modal">Lưu
+                        thay đổi</button>
                 </div>
             </div>
         </div>
@@ -2245,6 +2222,7 @@
             </a>
         </div>
     </div>
+
     <!-- Tap to top and theme setting button end -->
 
     <!-- Bg overlay Start -->
