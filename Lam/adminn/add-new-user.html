@@ -168,15 +168,15 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="support-ticket.html">
-                                        <i data-feather="phone"></i>
-                                        <span>Phiếu hỗ trợ</span>
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="profile-setting.html">
                                         <i data-feather="settings"></i>
                                         <span>Cài đặt</span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="support-ticket.html">
+                                        <i data-feather="phone"></i>
+                                        <span>Phiếu hỗ trợ</span>
                                     </a>
                                 </li>
                                 <li>
@@ -185,7 +185,7 @@
                                         <i data-feather="log-out"></i>
                                         <span>Đăng xuất</span>
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
                     </ul>
@@ -436,7 +436,7 @@
                                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
                                                     <form class="theme-form theme-form-2 mega-form">
                                                         <div class="card-header-1">
-                                                            <h5>Thông Tin Sản Phẩm</h5>
+                                                            <h5>Thông Tin Người Dùng</h5>
                                                         </div>
                 
                                                         <div class="row">
@@ -552,7 +552,7 @@
                                                         <h5>Quyền Liên Quan Đến Danh Mục</h5>
                                                     </div>
                                                     <div class="mb-4 row align-items-center">
-                                                        <label class="col-md-2 mb-0">Thêm Sản Phẩm</label>
+                                                        <label class="col-md-2 mb-0">Thêm Danh Mục</label>
                                                         <div class="col-md-9">
                                                             <form class="radio-section">
                                                                 <label>
@@ -570,7 +570,7 @@
                                                     </div>
                 
                                                     <div class="mb-4 row align-items-center">
-                                                        <label class="col-md-2 mb-0">Cập Nhật Sản Phẩm</label>
+                                                        <label class="col-md-2 mb-0">Cập Nhật Danh Mục</label>
                                                         <div class="col-md-9">
                                                             <form class="radio-section">
                                                                 <label>
@@ -588,7 +588,7 @@
                                                     </div>
                 
                                                     <div class="mb-4 row align-items-center">
-                                                        <label class="col-md-2 mb-0">Xóa Sản Phẩm</label>
+                                                        <label class="col-md-2 mb-0">Xóa Danh Mục</label>
                                                         <div class="col-md-9">
                                                             <form class="radio-section">
                                                                 <label>
@@ -605,7 +605,7 @@
                                                         </div>
                                                     </div>
                 
-                                                    <div class="mb-4 row align-items-center">
+                                                    <!-- <div class="mb-4 row align-items-center">
                                                         <label class="col-md-2 mb-0">Áp Dụng Giảm Giá</label>
                                                         <div class="col-md-9">
                                                             <form class="radio-section">
@@ -621,10 +621,10 @@
                                                                 </label>
                                                             </form>
                                                         </div>
-                                                    </div>
-                                                    <a href="add-new-user.html" class="align-items-center btn btn-theme d-flex">
-                                                        <i data-feather="plus"></i>Thêm Người Dùng
-                                                    </a>
+                                                    </div> -->
+                                                    <button style="width: 100%;" class="align-items-center btn btn-theme d-flex" data-bs-dismiss="modal" data-bs-target="#success" data-bs-toggle="modal">
+                                                        <i data-feather="user-check"></i>Xác nhận thêm
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -673,6 +673,34 @@
     
     <!-- Modal End -->
 
+    <!--Thêm người dùng thành công-->
+    <div class="modal fade theme-modal remove-coupon" id="success" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel12">Xong!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box text-center">
+                        <div class="wrapper">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                        </div>
+                        <h4 class="text-content">Đã thêm.</h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- latest js -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
 
@@ -687,16 +715,16 @@
     <script src="assets/js/scrollbar/simplebar.js"></script>
     <script src="assets/js/scrollbar/custom.js"></script>
 
-    <!-- customizer js -->
-    <script src="assets/js/customizer.js"></script>
+    <!-- customizer js 
+    <script src="assets/js/customizer.js"></script> -->
 
     <!-- Sidebar js-->
     <script src="assets/js/config.js"></script>
 
-    <!-- Plugins JS -->
     <script src="assets/js/sidebar-menu.js"></script>
+    <!-- Plugins JS 
     <script src="assets/js/notify/bootstrap-notify.min.js"></script>
-    <script src="assets/js/notify/index.js"></script>
+    <script src="assets/js/notify/index.js"></script> -->
 
     <!--Dropzon js -->
     <script src="assets/js/dropzone/dropzone.js"></script>

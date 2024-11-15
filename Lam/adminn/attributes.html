@@ -14,7 +14,7 @@
     <meta name="author" content="pixelstrap">
     <link rel="icon" href="assets/images/logo-tab-bar.png" type="image/x-icon">
     <link rel="shortcut icon" href="assets/images/logo-tab-bar.png" type="image/x-icon">
-    <title>P-Mart - Tất cả danh mục</title>
+    <title>P-Mart - Danh sách thuộc tính</title>
     <!-- Google font-->
     <link
         href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
@@ -165,15 +165,15 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="support-ticket.html">
-                                        <i data-feather="phone"></i>
-                                        <span>Phiếu hỗ trợ</span>
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="profile-setting.html">
                                         <i data-feather="settings"></i>
                                         <span>Cài đặt</span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="support-ticket.html">
+                                        <i data-feather="phone"></i>
+                                        <span>Phiếu hỗ trợ</span>
                                     </a>
                                 </li>
                                 <li>
@@ -182,7 +182,7 @@
                                         <i data-feather="log-out"></i>
                                         <span>Đăng xuất</span>
                                     </a>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
                     </ul>
@@ -600,7 +600,33 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">Hủy</button>
-                    <button type="button" class="btn theme-bg-color btn-md fw-bold text-light" data-bs-dismiss="modal">Lưu</button>
+                    <button type="button" class="btn btn-animation theme-bg-color btn-md fw-bold" data-bs-dismiss="modal" data-bs-target="#success" data-bs-toggle="modal">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade theme-modal remove-coupon" id="success" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel12">Xong!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box text-center">
+                        <div class="wrapper">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                        </div>
+                        <h4 class="text-content">Chỉnh sửa thành công.</h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Đóng</button>
                 </div>
             </div>
         </div>
@@ -638,7 +664,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="remove-box">
-                        <p>Khi xóa thuộc tính này thì sẽ biến mất vĩnh viễn, bạn có thể tạo mới lại sau này</p>
+                        <h5 style="text-align: center;">Khi xóa thuộc tính này thì sẽ biến mất vĩnh viễn, bạn có thể tạo mới lại sau này</h5>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -654,7 +680,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel12">Done!</h5>
+                    <h5 class="modal-title text-center" id="exampleModalLabel12">Xong!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
                         <i class="fas fa-times"></i>
                     </button>
@@ -667,11 +693,11 @@
                                 <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
                             </svg>
                         </div>
-                        <h4 class="text-content">It's Removed.</h4>
+                        <h4 class="text-content">Đã xóa.</h4>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Close</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Đóng</button>
                 </div>
             </div>
         </div>
@@ -692,16 +718,16 @@
     <script src="assets/js/scrollbar/simplebar.js"></script>
     <script src="assets/js/scrollbar/custom.js"></script>
 
-    <!-- customizer js -->
-    <script src="assets/js/customizer.js"></script>
+    <!-- customizer js 
+    <script src="assets/js/customizer.js"></script> -->
 
     <!-- Sidebar js -->
     <script src="assets/js/config.js"></script>
 
-    <!-- Plugins JS -->
     <script src="assets/js/sidebar-menu.js"></script>
+    <!-- Plugins JS 
     <script src="assets/js/notify/bootstrap-notify.min.js"></script>
-    <script src="assets/js/notify/index.js"></script>
+    <script src="assets/js/notify/index.js"></script> -->
 
     <!-- Data table js -->
     <script src="assets/js/jquery.dataTables.js"></script>
