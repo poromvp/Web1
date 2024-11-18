@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 
 
-<!-- Mirrored from themes.pixelstrap.com/fastkart/back-end/attributes.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Oct 2024 14:10:12 GMT -->
+<!-- Mirrored from themes.pixelstrap.com/fastkart/back-end/create-coupon.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Oct 2024 14:10:14 GMT -->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +12,10 @@
     <meta name="keywords"
         content="admin template, Fastkart admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="pixelstrap">
-    <link rel="icon" href="assets/images/logo-tab-bar.png" type="image/x-icon">
-    <link rel="shortcut icon" href="assets/images/logo-tab-bar.png" type="image/x-icon">
-    <title>P-Mart - Danh sách thuộc tính</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <title>Fastkart - Create Coupon</title>
+
     <!-- Google font-->
     <link
         href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
@@ -28,9 +29,6 @@
 
     <!-- remixicon css -->
     <link rel="stylesheet" type="text/css" href="assets/css/remixicon.css">
-
-    <!-- Data Table css -->
-    <link rel="stylesheet" type="text/css" href="assets/css/datatables.css">
 
     <!-- Themify icon css-->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/themify.css">
@@ -47,11 +45,6 @@
 
     <!-- App css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
-    <!-- Icon của Font Awesome copy từ đây nha-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/them.css">
 </head>
 
 <body>
@@ -86,10 +79,10 @@
                         <div class="Typeahead Typeahead--twitterUsers">
                             <div class="u-posRelative">
                                 <input class="demo-input Typeahead-input form-control-plaintext w-100" type="text"
-                                    placeholder="Tìm kiếm .." name="q" title="" autofocus>
+                                    placeholder="Search Fastkart .." name="q" title="" autofocus>
                                 <i class="close-search" data-feather="x"></i>
                                 <div class="spinner-border Typeahead-spinner" role="status">
-                                    <span class="sr-only">Loading...</span>
+                                    <span class="sr-only">Vui lòng chờ...</span>
                                 </div>
                             </div>
                             <div class="Typeahead-menu"></div>
@@ -143,11 +136,11 @@
                             </ul>
                         </li>
 
-                        <!-- <li>
+                        <li>
                             <div class="mode">
                                 <i class="ri-moon-line"></i>
                             </div>
-                        </li> -->
+                        </li>
                         <li class="profile-nav onhover-dropdown pe-0 me-0">
                             <div class="media profile-media">
                                 <img class="user-profile rounded-circle" src="assets/images/users/4.jpg" alt="">
@@ -170,15 +163,15 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="profile-setting.html">
-                                        <i data-feather="settings"></i>
-                                        <span>Cài đặt</span>
-                                    </a>
-                                </li>
-                                <!-- <li>
                                     <a href="support-ticket.html">
                                         <i data-feather="phone"></i>
                                         <span>Phiếu hỗ trợ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="profile-setting.html">
+                                        <i data-feather="settings"></i>
+                                        <span>Cài đặt</span>
                                     </a>
                                 </li>
                                 <li>
@@ -187,7 +180,7 @@
                                         <i data-feather="log-out"></i>
                                         <span>Đăng xuất</span>
                                     </a>
-                                </li> -->
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -196,7 +189,7 @@
         </div>
         <!-- Page Header Ends-->
 
-        <!-- Page Body Start -->
+        <!-- Page Body Start-->
         <div class="page-body-wrapper">
             <!-- Thanh điều hướng Ends-->
             <div class="sidebar-wrapper">
@@ -204,7 +197,7 @@
                 <div>
                     <div class="logo-wrapper logo-wrapper-center">
                         <a href="index.html" data-bs-original-title="" title="">
-                            <img style="width: 180px; height: 50px;" class="img-fluid for-white" src="assets/images/logo/p-mart-logo-full-white.png" alt="logo">
+                            <img class="img-fluid for-white" src="assets/images/logo/full-white.png" alt="logo">
                         </a>
                         <div class="back-btn">
                             <i class="fa fa-angle-left"></i>
@@ -215,7 +208,7 @@
                     </div>
                     <div class="logo-icon-wrapper">
                         <a href="index.html">
-                            <img class="img-fluid main-logo main-white" src="assets/images/logo/p-mart-logo.png" alt="logo">
+                            <img class="img-fluid main-logo main-white" src="assets/images/logo/1-white.png" alt="logo">
                             <img class="img-fluid main-logo main-dark" src="assets/images/logo/logo-white.png"
                                 alt="logo">
                         </a>
@@ -236,7 +229,7 @@
                                     </a>
                                 </li>
 
-                                 <li class="sidebar-list">
+                                <li class="sidebar-list">
                                     <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
                                         <i class="ri-store-3-line"></i>
                                         <span>Sản phẩm</span>
@@ -249,15 +242,31 @@
                                         <li>
                                             <a href="add-new-product.html">Thêm sản phẩm mới</a>
                                         </li>
+                                    </ul>
+                                </li>
 
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-list-check-2"></i>
+                                        <span>Danh mục sản phẩm</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
                                         <li>
-                                            <a href="category.html">Danh sách danh mục</a>
+                                            <a href="category.html">Danh sách các danh mục</a>
                                         </li>
 
                                         <li>
                                             <a href="add-new-category.html">Thêm danh mục mới</a>
                                         </li>
+                                    </ul>
+                                </li>
 
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-list-settings-line"></i>
+                                        <span>Thuộc tính</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
                                         <li>
                                             <a href="attributes.html">Danh sách thuộc tính</a>
                                         </li>
@@ -265,7 +274,6 @@
                                         <li>
                                             <a href="add-new-attributes.html">Thêm thuộc tính mới</a>
                                         </li>
-
                                     </ul>
                                 </li>
 
@@ -284,7 +292,7 @@
                                     </ul>
                                 </li>
 
-                                <!-- <li class="sidebar-list">
+                                <li class="sidebar-list">
                                     <a class="sidebar-link sidebar-title" href="javascript:void(0)">
                                         <i class="ri-user-3-line"></i>
                                         <span>Vai trò</span>
@@ -304,7 +312,7 @@
                                         <i class="ri-price-tag-3-line"></i>
                                         <span>Phương tiện</span>
                                     </a>
-                                </li> -->
+                                </li>
 
                                 <li class="sidebar-list">
                                     <a class="sidebar-link sidebar-title" href="javascript:void(0)">
@@ -313,14 +321,8 @@
                                     </a>
                                     <ul class="sidebar-submenu">
                                         <li>
-<<<<<<< HEAD
                                             <a href="order-list.html">Danh sách đặt hàng</a>
                                         </li>
-
-=======
-                                            <a href="order-list.html">Danh sách đơn hàng</a>
-                                        </li>
->>>>>>> 62bf2b290d2f4b56cd3c41f73f494a9f02b43530
                                         <li>
                                             <a href="order-tracking.html">Theo dõi đơn hàng</a>
                                         </li>
@@ -343,7 +345,7 @@
                                         </li>
                                     </ul>
                                 </li>
-                                
+                                -->
 
                                 <li class="sidebar-list">
                                     <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
@@ -406,7 +408,7 @@
                                         <i class="ri-list-check"></i>
                                         <span>Trang Danh Sách</span>
                                     </a>
-                                </li>-->
+                                </li>
                             </ul>
                         </div>
 
@@ -418,327 +420,258 @@
             </div>
             <!-- Thanh điều hướng Ends-->
 
-            <!-- Container-fluid starts-->
+            <!-- Create Coupon Table start -->
             <div class="page-body">
-                <!-- All User Table Start -->
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-sm-12">
-                            <div class="card card-table">
-                                <div class="card-body">
-                                    <div class="title-header option-title">
-                                        <h5>Tất cả thuộc tính</h5>
-                                        <form class="d-inline-flex">
-                                            <a href="add-new-attributes.html" class="align-items-center btn btn-theme d-flex">
-                                                <i data-feather="plus-square"></i>Thêm mới
-                                            </a>
-                                        </form>
-                                    </div>
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="title-header option-title">
+                                                <h5>Create Coupon</h5>
+                                            </div>
+                                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link active" id="pills-home-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-home"
+                                                        type="button">General</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-profile-tab"
+                                                        data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                                        type="button">Restriction</button>
+                                                </li>
+                                                <li class="nav-item" role="presentation">
+                                                    <button class="nav-link" id="pills-usage-tab" data-bs-toggle="pill"
+                                                        data-bs-target="#pills-usage" type="button">Usage</button>
+                                                </li>
+                                            </ul>
 
-                                    <div class="table-responsive category-table">
-                                        <table class="table all-package theme-table" id="table_id">
-                                            <thead>
-                                                <tr>
-                                                    <th>Tên thuộc tính</th>
-                                                    <th>Giá trị</th>
-                                                    <th>Lựa chọn</th>
-                                                </tr>
-                                            </thead>
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
+                                                    <form class="theme-form theme-form-2 mega-form">
+                                                        <div class="card-header-1">
+                                                            <h5>General</h5>
+                                                        </div>
 
-                                            <tbody>
-                                                <tr>
-                                                    <td>Màu sắc</td>
+                                                        <div class="row">
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label
+                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Coupon
+                                                                    Title</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="text">
+                                                                </div>
+                                                            </div>
 
-                                                    <td>Xanh, Đỏ, Trắng</td>
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label
+                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">Coupon
+                                                                    Code</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="number">
+                                                                </div>
+                                                            </div>
 
-                                                    <td>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                data-bs-target="#edit-attributes">
-                                                                    <i class="ri-pencil-line"></i>
-                                                                </a>
-                                                            </li>
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label
+                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">Start
+                                                                    Date</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="date">
+                                                                </div>
+                                                            </div>
 
-                                                            <li>
-                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                    data-bs-target="#exampleModalToggle">
-                                                                    <i class="ri-delete-bin-line"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label
+                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">End
+                                                                    Date</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="date">
+                                                                </div>
+                                                            </div>
 
-                                                <tr>
-                                                    <td>Kích cỡ</td>
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label
+                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Free
+                                                                    Shipping</label>
+                                                                <div class="col-md-9">
+                                                                    <div class="form-check user-checkbox ps-0">
+                                                                        <input class="checkbox_animated check-it"
+                                                                            type="checkbox" value=""
+                                                                            id="flexCheckDefault">
+                                                                        <label
+                                                                            class="form-label-title col-md-2 mb-0">Allow
+                                                                            Free Shipping</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
 
-                                                    <td>S, M, L, XL</td>
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label
+                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">Quantity</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="number">
+                                                                </div>
+                                                            </div>
 
-                                                    <td>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                data-bs-target="#edit-attributes">
-                                                                    <i class="ri-pencil-line"></i>
-                                                                </a>
-                                                            </li>
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label
+                                                                    class="col-sm-2 col-form-label form-label-title">Discount
+                                                                    Type</label>
+                                                                <div class="col-sm-10">
+                                                                    <select class="js-example-basic-single"
+                                                                        name="state">
+                                                                        <option disabled>--Select--</option>
+                                                                        <option>Percent</option>
+                                                                        <option>Fixed</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
 
-                                                            <li>
-                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                    data-bs-target="#exampleModalToggle">
-                                                                    <i class="ri-delete-bin-line"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
+                                                            <div class="row align-items-center">
+                                                                <label
+                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Status</label>
+                                                                <div class="col-md-9">
+                                                                    <div class="form-check user-checkbox ps-0">
+                                                                        <input class="checkbox_animated check-it"
+                                                                            type="checkbox" value=""
+                                                                            id="flexCheckDefault1">
+                                                                        <label class="form-label-title col-md-2 mb-0">
+                                                                            Enable the Coupon</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
 
-                                                <tr>
-                                                    <td>Chất liệu</td>
+                                                <div class="tab-pane fade" id="pills-profile" role="tabpanel">
+                                                    <form class="theme-form theme-form-2 mega-form">
+                                                        <div class="card-header-1">
+                                                            <h5>Restriction</h5>
+                                                        </div>
 
-                                                    <td>Cotton, Polyster</td>
+                                                        <div class="row">
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label
+                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Products</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="text">
+                                                                </div>
+                                                            </div>
 
-                                                    <td>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                data-bs-target="#edit-attributes">
-                                                                    <i class="ri-pencil-line"></i>
-                                                                </a>
-                                                            </li>
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label
+                                                                    class="col-sm-2 col-form-label form-label-title">Category</label>
+                                                                <div class="col-sm-10">
+                                                                    <select class="js-example-basic-single"
+                                                                        name="state">
+                                                                        <option disabled>--Select--</option>
+                                                                        <option>Electronics</option>
+                                                                        <option>Clothes</option>
+                                                                        <option>Shoes</option>
+                                                                        <option>Digital</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
 
-                                                            <li>
-                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                    data-bs-target="#exampleModalToggle">
-                                                                    <i class="ri-delete-bin-line"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label
+                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">Minimum
+                                                                    Spend</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="number">
+                                                                </div>
+                                                            </div>
 
-                                                <tr>
-                                                    <td>Phong cách</td>
+                                                            <div class="row align-items-center">
+                                                                <label
+                                                                    class="col-lg-2 col-md-3 col-form-label form-label-title">Maximum
+                                                                    Spend</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="number">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
 
-                                                    <td>Đơn giản, Hiện đại, Dân tộc, western</td>
+                                                <div class="tab-pane fade" id="pills-usage" role="tabpanel">
+                                                    <form class="theme-form theme-form-2 mega-form">
+                                                        <div class="card-header-1">
+                                                            <h5>Usage Limits</h5>
+                                                        </div>
 
-                                                    <td>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                data-bs-target="#edit-attributes">
-                                                                    <i class="ri-pencil-line"></i>
-                                                                </a>
-                                                            </li>
+                                                        <div class="row">
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label
+                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Per
+                                                                    Limited</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="number">
+                                                                </div>
+                                                            </div>
 
-                                                            <li>
-                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                    data-bs-target="#exampleModalToggle">
-                                                                    <i class="ri-delete-bin-line"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-
-                                                <tr>
-                                                    <td>Loại thịt</td>
-
-                                                    <td>Tươi, Đông lạnh, Ướp gia vị</td>
-
-                                                    <td>
-                                                        <ul>
-                                                            <li>
-                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                data-bs-target="#edit-attributes">
-                                                                    <i class="ri-pencil-line"></i>
-                                                                </a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                    data-bs-target="#exampleModalToggle">
-                                                                    <i class="ri-delete-bin-line"></i>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                            <div class="row align-items-center">
+                                                                <label
+                                                                    class="form-label-title col-lg-2 col-md-3 mb-0">Per
+                                                                    Customer</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="number">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <nav class="custom-pagination">
-                    <ul class="pagination justify-content-center">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="javascript:void(0)" tabindex="-1">
-                                <i class="fa-solid fa-angles-left"></i>
-                            </a>
-                        </li>
-                        <li class="page-item active">
-                            <a class="page-link" href="javascript:void(0)">1</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="javascript:void(0)">2</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="javascript:void(0)">3</a>
-                        </li>
-                        <li class="page-item">
-                            <a class="page-link" href="javascript:void(0)">
-                                <i class="fa-solid fa-angles-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- All User Table Ends-->
-
-                <div class="container-fluid">
-                    <!-- footer start-->
-                    <footer class="footer">
-                        <div class="footer-copyright text-center">
-                            <p class="mb-0">Copyright 2005 © P-Mart</p>
-                        </div>
-                    </footer>
-                    <!-- footer end-->
-                </div>
             </div>
-            <!-- Container-fluid end -->
-        </div>
-        <!-- Page Body End -->
+            <!-- Create Coupon Table End -->
 
-        <!-- Edit Attributes Modal Start -->
-    <div class="modal fade theme-modal" id="edit-attributes" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel3">Chỉnh Sửa Thuộc Tính</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="attributesname" class="form-label">Tên Thuộc Tính</label>
-                            <input type="text" class="form-control" id="attributesname" value="Màu sắc">
+            <!-- footer start-->
+            <div class="container-fluid">
+                <footer class="footer">
+                    <div class="row">
+                        <div class="col-md-12 footer-copyright text-center">
+                            <p class="mb-0">Copyright 2022 © Fastkart theme by pixelstrap</p>
                         </div>
-                        <div class="mb-3">
-                            <label for="attributesvalues" class="form-label">Giá Trị</label>
-                            <input type="text" class="form-control" id="attributesvalues" value="Xanh, Đỏ, Trắng">
-                        </div> 
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-animation btn-md fw-bold" data-bs-dismiss="modal">Hủy</button>
-                    <button type="button" class="btn btn-animation theme-bg-color btn-md fw-bold" data-bs-dismiss="modal" data-bs-target="#success" data-bs-toggle="modal">Lưu</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade theme-modal remove-coupon" id="success" aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel12">Xong!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="remove-box text-center">
-                        <div class="wrapper">
-                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
-                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                            </svg>
-                        </div>
-                        <h4 class="text-content">Chỉnh sửa thành công.</h4>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Đóng</button>
-                </div>
+                </footer>
             </div>
+            <!-- footer end-->
         </div>
     </div>
-    <!-- Edit Attributes Modal End -->
+    <!-- page-wrapper end-->
 
-        <!-- Modal Start -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
-            <div class="modal-dialog  modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <h5 class="modal-title" id="staticBackdropLabel">Đăng xuất</h5>
-                        <p>Bạn có chắc là muốn dăng xuất</p>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        <div class="button-box">
-                            <button type="button" class="btn btn--no" data-bs-dismiss="modal">Không</button>
-                            <button type="button" class="btn  btn--yes btn-primary">Có</button>
-                        </div>
+    <!-- Modal start -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <h5 class="modal-title" id="staticBackdropLabel">Đăng xuất</h5>
+                    <p>Bạn có chắc chắn muốn đăng xuất không?</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                   <div class="button-box">
+                        <button type="button" class="btn btn--no" data-bs-dismiss="modal">Không</button>
+                        <button type="button" class="btn  btn--yes btn-primary">Có</button>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Modal End -->
     </div>
-
-    <!-- Delete Modal Box Start -->
-    <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle" aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header d-block text-center">
-                    <h5 class="modal-title w-100" id="exampleModalLabel22">Bạn có chắc không ?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="remove-box">
-                        <h5 style="text-align: center;">Khi xóa thuộc tính này thì sẽ biến mất vĩnh viễn, bạn có thể tạo mới lại sau này</h5>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-animation btn-sm fw-bold" data-bs-dismiss="modal">Không</button>
-                    <button type="button" class="btn btn-animation btn-sm fw-bold" data-bs-target="#exampleModalToggle2"
-                        data-bs-toggle="modal" data-bs-dismiss="modal">Có</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade theme-modal remove-coupon" id="exampleModalToggle2" aria-hidden="true" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel12">Xong!</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                        <i class="fas fa-times"></i>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="remove-box text-center">
-                        <div class="wrapper">
-                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
-                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
-                            </svg>
-                        </div>
-                        <h4 class="text-content">Đã xóa.</h4>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Đóng</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Delete Modal Box End -->
+    <!-- Modal end -->
 
     <!-- latest js -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
@@ -754,20 +687,24 @@
     <script src="assets/js/scrollbar/simplebar.js"></script>
     <script src="assets/js/scrollbar/custom.js"></script>
 
-    <!-- customizer js 
-    <script src="assets/js/customizer.js"></script> -->
+    <!-- customizer js -->
+    <script src="assets/js/customizer.js"></script>
 
     <!-- Sidebar js -->
     <script src="assets/js/config.js"></script>
 
+    <!-- Plugins JS -->
     <script src="assets/js/sidebar-menu.js"></script>
-    <!-- Plugins JS 
     <script src="assets/js/notify/bootstrap-notify.min.js"></script>
-    <script src="assets/js/notify/index.js"></script> -->
+    <script src="assets/js/notify/index.js"></script>
 
-    <!-- Data table js -->
-    <script src="assets/js/jquery.dataTables.js"></script>
-    <script src="assets/js/custom-data-table.js"></script>
+    <!--Dropzon js -->
+    <script src="assets/js/dropzone/dropzone.js"></script>
+    <script src="assets/js/dropzone/dropzone-script.js"></script>
+
+    <!-- select 2 js -->
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/select2-custom.js"></script>
 
     <!-- sidebar effect -->
     <script src="assets/js/sidebareffect.js"></script>
@@ -777,5 +714,5 @@
 </body>
 
 
-<!-- Mirrored from themes.pixelstrap.com/fastkart/back-end/attributes.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Oct 2024 14:10:12 GMT -->
+<!-- Mirrored from themes.pixelstrap.com/fastkart/back-end/create-coupon.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Oct 2024 14:10:14 GMT -->
 </html>

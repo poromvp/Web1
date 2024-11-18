@@ -14527,7 +14527,7 @@ textarea.form-control-lg {
     height: 1em;
     margin-top: .25em;
     vertical-align: top;
-    background-color: #fff;
+    background-color: #ffffff;
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -25006,6 +25006,18 @@ fieldset:disabled .btn {
     .d-print-none {
         display: none !important
     }
+}
+
+.text-box {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.text-box:focus {
+    border-color: purple; /* Change border color to purple when focused */
 }
 
 /*# sourceMappingURL=bootstrap.css.map */
