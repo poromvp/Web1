@@ -4,5 +4,4 @@ $(document).ready(function () {
         ordering: false,
         info: false,
         responsive: true,
-    });
 });
