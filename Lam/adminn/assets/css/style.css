@@ -910,6 +910,10 @@
     width: 100px !important
 }
 
+.bt-column {
+    width: 186px !important
+}
+
 .font-primary {
     color: #9306cf !important
 }
@@ -14785,7 +14789,7 @@ table tr th {
     background-color: #f9f9f6;
     text-align: center;
     min-width: 170px;
-    padding: 15px !important
+    padding: 15px 
 }
 
 .all-package thead tr th:last-child {
