@@ -34930,7 +34930,9 @@ body.rtl .menu-label {
 
 .cart-table {
     background-color: #f8f8f8;
-    padding: calc(18px + 17*(100vw - 320px)/1600) calc(12px + 13*(100vw - 320px)/1600)
+    padding: calc(18px + 17*(100vw - 320px)/1600) calc(12px + 13*(100vw - 320px)/1600);
+    width: 1200px;
+
 }
 
 .cart-table.cart-table-2 {
@@ -35320,7 +35322,8 @@ body.rtl .menu-label {
 
 .summery-box {
     border-radius: 5px;
-    background-color: #f8f8f8
+    background-color: #f8f8f8;
+    width: 1200px;
 }
 
 .summery-box .summery-header {
