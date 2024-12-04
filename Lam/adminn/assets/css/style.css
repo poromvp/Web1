@@ -5200,6 +5200,72 @@ strong~p {
     padding: 16px
 }
 
+#searchForm {
+    display: flex; /* Sử dụng Flexbox để sắp xếp các phần tử trong form */
+    flex-wrap: wrap; /* Cho phép các phần tử xuống hàng nếu không đủ không gian */
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+    padding: 10px;
+    align-items: stretch;
+}
+#searchForm .form-group {
+    flex: 1;
+    min-width: 75px; /* Đảm bảo độ rộng tối thiểu cho các phần tử */
+    box-sizing: border-box; /* Đảm bảo padding không làm tràn phần tử */
+}
+#searchForm .form-control {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    height: 38px; /* Đảm bảo chiều cao của tất cả các ô input là như nhau */
+    box-sizing: border-box;
+}
+#searchForm .form-group .date-range {
+    display: flex;
+    align-items: center;  /* Căn giữa theo chiều dọc */
+    gap: 5px;  /* Khoảng cách giữa các phần tử */
+    width: 100%;
+}
+#searchForm .form-group .date-range input {
+    flex: 1;
+    min-width: 185px;
+    height: 38px; /* Đảm bảo chiều cao đồng nhất với các ô input khác */
+}
+
+#searchForm .form-group .date-range span {
+    font-weight: bold;
+    display: inline-block;  /* Đảm bảo "đến" không bị lệch */
+}
+#searchForm .form-group button {
+    width: 100%;  /* Đảm bảo nút chiếm toàn bộ chiều rộng */
+    margin-top: 10px;  /* Khoảng cách phía trên nút */
+    padding: 8px 20px;  /* Thêm padding cho nút */
+    border-radius: 4px;  /* Bo góc cho nút */
+}
+
+.search-container {
+    display: flex;  /* Sử dụng Flexbox */
+    justify-content: flex-end;  /* Căn giữa theo chiều ngang */
+    align-items: center;  /* Căn giữa theo chiều dọc */
+    margin-top: 10px;  /* Khoảng cách giữa các phần tử nếu cần */
+}
+
+.search-tk {
+    background-color: #9306cf;  /* Màu nền */
+    color: white;  /* Màu chữ */
+    padding: 10px 20px;  /* Khoảng cách bên trong nút */
+    font-size: 1rem;  /* Kích thước chữ */
+    border: none;  /* Bỏ viền */
+    border-radius: 4px;  /* Bo góc */
+    cursor: pointer;  /* Thêm con trỏ khi hover */
+    margin-right: 300px;
+}
+
+.search-tk:hover {
+    background-color: #7e02a7;  /* Màu khi hover */
+}
+
+
 .card .card-header.card-no-border {
     border-bottom: none !important
 }
@@ -23359,6 +23425,7 @@ footer.blockquote-footer {
     font-size: 18px;
     font-weight: 500
 }
+
 
 .dropdown.icon-dropdown {
     background-color: #f9f9f6;
