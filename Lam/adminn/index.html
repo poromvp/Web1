@@ -231,7 +231,7 @@
                                 <li class="sidebar-list" style="position: relative; top: 50px;">
                                     <a class="sidebar-link sidebar-title link-nav" href="index.html">
                                         <i class="ri-home-line"></i>
-                                        <span>BẢNG ĐIỀU KHIỂN</span>
+                                        <span>THỐNG KÊ</span>
                                     </a>
                                 </li>
 
@@ -689,27 +689,57 @@
 
                         
                         <!-- Best Selling Product Start -->
-                        <div class="col-xl-6 col-md-12">
-                            <div class="card o-hidden card-hover" style="width: 1000px;">
-                                <div class="card-header card-header-top card-header--2 px-0 pt-0">
-                                    <div class="card-header-title">
-                                        <h4>Sản Phẩm Bán Chạy Nhất</h4>
-                                    </div>
-
-                                    <div class="best-selling-box d-sm-flex d-none">
-                                        <span>Lựa chọn:</span>
-                                        <div class="dropdown">
-                                            <button class="btn p-0 dropdown-toggle" type="button"
-                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                                data-bs-auto-close="true">Bán Chạy</button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a class="dropdown-item" href="enhat.html">Bán Ế</a></li>
-                                                <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                                            </ul>
+                            <div class="col-xl-6 col-md-12">
+                                <div class="card o-hidden card-hover" style="width: 1100px;">
+                                    <div class="card-header card-header-top card-header--2 px-0 pt-0">
+                                        <div class="card-header-title">
+                                            <h4>Thống kê sản phẩm </h4>                                            
+                    
+                                            <form id="searchForm" class="search-form">
+                                                <!-- Ô nhập tên sản phẩm -->
+                                                <div class="form-group">
+                                                    <label for="productName">Tên sản phẩm</label>
+                                                    <input type="text" id="productName" name="productName" class="form-control" placeholder="Nhập tên sản phẩm">
+                                                </div>
+                                            
+                                                <!-- Chọn danh mục -->
+                                                <div class="form-group">
+                                                    <label for="category">Danh mục</label>
+                                                    <select id="category" name="category" class="form-control">
+                                                        <option selected disabled>Danh mục</option>
+                                                        <option>Tươi sống</option>
+                                                        <option>Chế Biến Sẵn</option>  
+                                                        <option>Thức Uống</option>
+                                                        <option>Đồ Gia Dụng</option>
+                                                    </select>
+                                                </div>
+                                            
+                                                <!-- Chọn trạng thái bán chạy hoặc ế -->
+                                                <div class="form-group">
+                                                    <label for="status">Tình trạng</label>
+                                                    <select id="status" name="status" class="form-control">
+                                                        <option value="">Tất cả</option>
+                                                        <option value="bestseller">Bán chạy</option>
+                                                        <option value="slow">Bán ế</option>
+                                                    </select>
+                                                </div>
+                                            
+                                                <!-- Chọn từ ngày tháng năm đến ngày tháng năm -->
+                                                <div class="form-group">
+                                                    <label>Khoảng thời gian</label>
+                                                    <div class="date-range">
+                                                        <input type="date" id="startDate" name="startDate" class="form-control">
+                                                        <span>đến</span>
+                                                        <input type="date" id="endDate" name="endDate" class="form-control">
+                                                    </div>
+                                                </div>
+                                        
+                                            </form>
+                                            <div class="search-container">
+                                                <button class="search-tk">Thống kê</button>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
                                 <div class="card-body p-0">
                                     <div>
@@ -742,21 +772,14 @@
 
                                                         <td>
                                                             <div class="product-detail-box">
-                                                                <h6>Lượt mua</h6>
+                                                                <h6>Số lượng bán ra</h6>
                                                                 <h5>1250</h5>
                                                             </div>
                                                         </td>
 
                                                         <td>
                                                             <div class="product-detail-box">
-                                                                <h6>Trong kho</h6>
-                                                                <h5>510</h5>
-                                                            </div>
-                                                        </td>
-
-                                                        <td>
-                                                            <div class="product-detail-box">
-                                                                <h6>Tổng</h6>
+                                                                <h6>Tổng tiền</h6>
                                                                 <h5>23.798.000VND</h5>
                                                             </div>
                                                         </td>
@@ -790,21 +813,14 @@
 
                                                         <td>
                                                             <div class="product-detail-box">
-                                                                <h6>Lượt mua</h6>
+                                                                <h6>Số lượng bán ra</h6>
                                                                 <h5>893</h5>
                                                             </div>
                                                         </td>
 
                                                         <td>
                                                             <div class="product-detail-box">
-                                                                <h6>Trong kho</h6>
-                                                                <h5>220</h5>
-                                                            </div>
-                                                        </td>
-
-                                                        <td>
-                                                            <div class="product-detail-box">
-                                                                <h6>Tổng</h6>
+                                                                <h6>Tổng tiền</h6>
                                                                 <h5>15.452.650VND</h5>
                                                             </div>
                                                         </td>
@@ -837,21 +853,14 @@
 
                                                         <td>
                                                             <div class="product-detail-box">
-                                                                <h6>Lượt mua</h6>
+                                                                <h6>Số lượng bán ra</h6>
                                                                 <h5>965</h5>
                                                             </div>
                                                         </td>
 
                                                         <td>
                                                             <div class="product-detail-box">
-                                                                <h6>Trong kho</h6>
-                                                                <h5>133</h5>
-                                                            </div>
-                                                        </td>
-
-                                                        <td>
-                                                            <div class="product-detail-box">
-                                                                <h6>Tổng</h6>
+                                                                <h6>Tổng tiền</h6>
                                                                 <h5>20.224.645VND</h5>
                                                             </div>
                                                         </td>
@@ -875,7 +884,7 @@
 
                         <!-- Recent Lượt mua start-->
                         <div class="col-xl-6">
-                            <div class="card o-hidden card-hover" style="width: 1000px;">
+                            <div class="card o-hidden card-hover" style="width: 1100px;">
                                 <div class="card-header card-header-top card-header--2 px-0 pt-0">
                                     <div class="card-header-title">
                                         <h4>5 Khách Hàng Mua Nhiều Nhất</h4>
