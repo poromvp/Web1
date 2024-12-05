@@ -47,6 +47,10 @@
     <!-- Bootstrap css -->
     <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css">
 
+    <!-- Liên kết Bootstrap (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
     <!-- App css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -231,9 +235,7 @@
                                         <li>
                                             <a href="order-list.html">Danh sách đặt hàng</a>
                                         </li>
-                                        <li>
-                                            <a href="order-tracking.html">Theo dõi đơn hàng</a>
-                                        </li>
+
                                     </ul>
                                 </li>
 
@@ -371,13 +373,26 @@
                                                         <td>68.000 VNĐ</td>
                                                         <td>
                                                             <ul>
-                                                                <li><a href="order-detail.html"><i class="ri-eye-line"></i></a></li>
-                                                                
-                                                                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><i class="ri-delete-bin-line"></i></a></li>
-                                                                <li><a class="btn btn-sm btn-solid text-white" href="order-tracking.html">Theo dõi</a></li>
+                                                                <li>
+                                                                    <a href="order-detail.html">
+                                                                        <i class="ri-eye-line"></i>
+                                                                    </a>
+                                                                </li>
+
+                                                                <li>    
+                                                                    <!-- Biểu tượng bút chì -->
+                                                                    <i class="ri-pencil-line edit-icon" data-bs-toggle="modal" data-bs-target="#editStatusModal"></i>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                        <i class="ri-delete-bin-line"></i>
+                                                                    </a>
+                                                                </li>
                                                             </ul>
                                                         </td>
                                                     </tr>
+                                                    
                                                     <tr data-bs-toggle="offcanvas" href="#order-details">
                                                         <td>406-4883635</td>
                                                         <td>20/4/2023</td>
@@ -388,27 +403,34 @@
                                                         <td>1.680.000 VNĐ</td>
                                                         <td>
                                                             <ul>
-                                                                <li><a href="order-detail.html"><i class="ri-eye-line"></i></a></li>
-                                                                
-                                                                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><i class="ri-delete-bin-line"></i></a></li>
-                                                                <li><a class="btn btn-sm btn-solid text-white" href="order-tracking.html">Theo dõi</a></li>
+                                                                <li>
+                                                                    <a href="order-detail.html">
+                                                                        <i class="ri-eye-line"></i>
+                                                                    </a>
+                                                                </li>
+
+                                                                <li>    
+                                                                    <!-- Biểu tượng bút chì -->
+                                                                    <i class="ri-pencil-line edit-icon" data-bs-toggle="modal" data-bs-target="#editStatusModal"></i>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                        <i class="ri-delete-bin-line"></i>
+                                                                    </a>
+                                                                </li>
                                                             </ul>
                                                         </td>
                                                     </tr>
-                                                    <tr data-bs-toggle="offcanvas" href="#order-details"></tr>
-
-                                                        <td> 573-685572</td>
-
+                                                    
+                                                    <tr data-bs-toggle="offcanvas" href="#order-details">
+                                                        <td>573-685572</td>
                                                         <td>25/1/2024</td>
-
                                                         <td>Paypal</td>
-
                                                         <td class="order-success">
                                                             <span>Hoàn thành</span>
                                                         </td>
-
                                                         <td>39.000 VNĐ</td>
-
                                                         <td>
                                                             <ul>
                                                                 <li>
@@ -417,37 +439,58 @@
                                                                     </a>
                                                                 </li>
 
-                                          
+                                                                <li>    
+                                                                    <!-- Biểu tượng bút chì -->
+                                                                    <i class="ri-pencil-line edit-icon" data-bs-toggle="modal" data-bs-target="#editStatusModal"></i>
+                                                                </li>
 
                                                                 <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModalToggle">
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
                                                                         <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="btn btn-sm btn-solid text-white"
-                                                                        href="order-tracking.html">
-                                                                        Theo dõi
                                                                     </a>
                                                                 </li>
                                                             </ul>
                                                         </td>
                                                     </tr>
-                                                    <tr data-bs-toggle="offcanvas" href="#order-details"></tr>
+                                                    
+                                                    <tr data-bs-toggle="offcanvas" href="#order-details">
+                                                        <td>123-1234567</td>
+                                                        <td>13/8/2024</td>
+                                                        <td>Paypla</td>
+                                                        <td class="order-success">
+                                                            <span>Hoàn thành</span>
+                                                        </td>
+                                                        <td>239.000 VNĐ</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="order-detail.html">
+                                                                        <i class="ri-eye-line"></i>
+                                                                    </a>
+                                                                </li>
 
-                                                        <td> 586-5865224</td>
+                                                                <li>    
+                                                                    <!-- Biểu tượng bút chì -->
+                                                                    <i class="ri-pencil-line edit-icon" data-bs-toggle="modal" data-bs-target="#editStatusModal"></i>
+                                                                </li>
 
+                                                                <li>
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                        <i class="ri-delete-bin-line"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr data-bs-toggle="offcanvas" href="#order-details">
+                                                        <td>586-5865224</td>
                                                         <td>7/8/2024</td>
-
                                                         <td>Stripe</td>
-
                                                         <td class="order-pending">
                                                             <span>Đang xử lí</span>
                                                         </td>
-
                                                         <td>12.000 VNĐ</td>
-
                                                         <td>
                                                             <ul>
                                                                 <li>
@@ -456,23 +499,20 @@
                                                                     </a>
                                                                 </li>
 
-                                          
+                                                                <li>    
+                                                                    <!-- Biểu tượng bút chì -->
+                                                                    <i class="ri-pencil-line edit-icon" data-bs-toggle="modal" data-bs-target="#editStatusModal"></i>
+                                                                </li>
 
                                                                 <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModalToggle">
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
                                                                         <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="btn btn-sm btn-solid text-white"
-                                                                        href="order-tracking.html">
-                                                                        Theo dõi
                                                                     </a>
                                                                 </li>
                                                             </ul>
                                                         </td>
                                                     </tr>
+                                                    
                                                     <tr data-bs-toggle="offcanvas" href="#order-details">
                                                         <td>147-3692584</td>
                                                         <td>5/9/2024</td>
@@ -483,61 +523,34 @@
                                                         <td>39.000 VNĐ</td>
                                                         <td>
                                                             <ul>
-                                                                <li><a href="order-detail.html"><i class="ri-eye-line"></i></a></li>
-                                                                
-                                                                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><i class="ri-delete-bin-line"></i></a></li>
-                                                                <li><a class="btn btn-sm btn-solid text-white" href="order-tracking.html">Theo dõi</a></li>
+                                                                <li>
+                                                                    <a href="order-detail.html">
+                                                                        <i class="ri-eye-line"></i>
+                                                                    </a>
+                                                                </li>
+
+                                                                <li>    
+                                                                    <!-- Biểu tượng bút chì -->
+                                                                    <i class="ri-pencil-line edit-icon" data-bs-toggle="modal" data-bs-target="#editStatusModal"></i>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                        <i class="ri-delete-bin-line"></i>
+                                                                    </a>
+                                                                </li>
                                                             </ul>
                                                         </td>
                                                     </tr>
+                                                    
                                                     <tr data-bs-toggle="offcanvas" href="#order-details">
                                                         <td>479-7533144</td>
                                                         <td>9/9/2024</td>
                                                         <td>Stripe</td>
-                                                        <td class="order-pending">
-                                                            <span>Đang xử lí</span>
-                                                        </td>
-                                                        <td>78.000 VNĐ</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li><a href="order-detail.html"><i class="ri-eye-line"></i></a></li>
-                                                                
-                                                                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><i class="ri-delete-bin-line"></i></a></li>
-                                                                <li><a class="btn btn-sm btn-solid text-white" href="order-tracking.html">Theo dõi</a></li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                <tr data-bs-toggle="offcanvas" href="#order-details">
-                                                        <td>546-7664537</td>
-                                                        <td>10/10/2024</td>
-                                                        <td>Paypal</td>
                                                         <td class="order-success">
                                                             <span>Hoàn thành</span>
                                                         </td>
                                                         <td>10.000 VNĐ</td>
-                                                        <td>
-                                                            <ul>
-                                                                <li><a href="order-detail.html"><i class="ri-eye-line"></i></a></li>
-                                                                
-                                                                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><i class="ri-delete-bin-line"></i></a></li>
-                                                                <li><a class="btn btn-sm btn-solid text-white" href="order-tracking.html">Theo dõi</a></li>
-                                                            </ul>
-                                                        </td>
-                                                    </tr>
-                                                    <tr data-bs-toggle="offcanvas" href="#order-details"></tr>
-
-                                                        <td> 456-1245789</td>
-
-                                                        <td>10/10/2024</td>
-
-                                                        <td>Stripe</td>
-
-                                                        <td class="order-cancle">
-                                                            <span>Đã huỷ</span>
-                                                        </td>
-
-                                                        <td>50.000 VNĐ</td>
-
                                                         <td>
                                                             <ul>
                                                                 <li>
@@ -546,23 +559,80 @@
                                                                     </a>
                                                                 </li>
 
-                                          
+                                                                <li>    
+                                                                    <!-- Biểu tượng bút chì -->
+                                                                    <i class="ri-pencil-line edit-icon" data-bs-toggle="modal" data-bs-target="#editStatusModal"></i>
+                                                                </li>
 
                                                                 <li>
-                                                                    <a href="javascript:void(0)" data-bs-toggle="modal"
-                                                                        data-bs-target="#exampleModalToggle">
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
                                                                         <i class="ri-delete-bin-line"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li>
-                                                                    <a class="btn btn-sm btn-solid text-white"
-                                                                        href="order-tracking.html">
-                                                                        Theo dõi
                                                                     </a>
                                                                 </li>
                                                             </ul>
                                                         </td>
                                                     </tr>
+                                                    
+                                                    <tr data-bs-toggle="offcanvas" href="#order-details">
+                                                        <td>456-1245789</td>
+                                                        <td>10/10/2024</td>
+                                                        <td>Stripe</td>
+                                                        <td class="order-cancle">
+                                                            <span>Đã huỷ</span>
+                                                        </td>
+                                                        <td>50.000 VNĐ</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="order-detail.html">
+                                                                        <i class="ri-eye-line"></i>
+                                                                    </a>
+                                                                </li>
+
+                                                                <li>    
+                                                                    <!-- Biểu tượng bút chì -->
+                                                                    <i class="ri-pencil-line edit-icon" data-bs-toggle="modal" data-bs-target="#editStatusModal"></i>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                        <i class="ri-delete-bin-line"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr data-bs-toggle="offcanvas" href="#order-details">
+                                                        <td>546-7664537</td>
+                                                        <td>10/10/2024</td>
+                                                        <td>Paypal</td>
+                                                        <td class="order-pending">
+                                                            <span>Đang xử lý</span>
+                                                        </td>
+                                                        <td>10.000 VNĐ</td>
+                                                        <td>
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="order-detail.html">
+                                                                        <i class="ri-eye-line"></i>
+                                                                    </a>
+                                                                </li>
+
+                                                                <li>    
+                                                                    <!-- Biểu tượng bút chì -->
+                                                                    <i class="ri-pencil-line edit-icon" data-bs-toggle="modal" data-bs-target="#editStatusModal"></i>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                        <i class="ri-delete-bin-line"></i>
+                                                                    </a>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    
                                                     <tr data-bs-toggle="offcanvas" href="#order-details">
                                                         <td>987-9876543</td>
                                                         <td>4/11/2024</td>
@@ -573,30 +643,56 @@
                                                         <td>168.000 VNĐ</td>
                                                         <td>
                                                             <ul>
-                                                                <li><a href="order-detail.html"><i class="ri-eye-line"></i></a></li>
-                                                                
-                                                                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><i class="ri-delete-bin-line"></i></a></li>
-                                                                <li><a class="btn btn-sm btn-solid text-white" href="order-tracking.html">Theo dõi</a></li>
+                                                                <li>
+                                                                    <a href="order-detail.html">
+                                                                        <i class="ri-eye-line"></i>
+                                                                    </a>
+                                                                </li>
+
+                                                                <li>    
+                                                                    <!-- Biểu tượng bút chì -->
+                                                                    <i class="ri-pencil-line edit-icon" data-bs-toggle="modal" data-bs-target="#editStatusModal"></i>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                        <i class="ri-delete-bin-line"></i>
+                                                                    </a>
+                                                                </li>
                                                             </ul>
                                                         </td>
                                                     </tr>
+                                                    
                                                     <tr data-bs-toggle="offcanvas" href="#order-details">
                                                         <td>759-4568734</td>
                                                         <td>5/11/2024</td>
                                                         <td>Stripe</td>
                                                         <td class="order-pending">
-                                                            <span>Đang xử lí</span>
+                                                            <span>Chưa xử lí</span>
                                                         </td>
                                                         <td>1.268.000 VNĐ</td>
                                                         <td>
                                                             <ul>
-                                                                <li><a href="order-detail.html"><i class="ri-eye-line"></i></a></li>
-                                                                
-                                                                <li><a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle"><i class="ri-delete-bin-line"></i></a></li>
-                                                                <li><a class="btn btn-sm btn-solid text-white" href="order-tracking.html">Theo dõi</a></li>
+                                                                <li>
+                                                                    <a href="order-detail.html">
+                                                                        <i class="ri-eye-line"></i>
+                                                                    </a>
+                                                                </li>
+
+                                                                <li>    
+                                                                    <!-- Biểu tượng bút chì -->
+                                                                    <i class="ri-pencil-line edit-icon" data-bs-toggle="modal" data-bs-target="#editStatusModal"></i>
+                                                                </li>
+
+                                                                <li>
+                                                                    <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                                                                        <i class="ri-delete-bin-line"></i>
+                                                                    </a>
+                                                                </li>
                                                             </ul>
                                                         </td>
                                                     </tr>
+                                                    
                                                 </tbody>
                                             </table>
                                             <nav class="custom-pagination">
@@ -607,13 +703,13 @@
                                                         </a>
                                                     </li>
                                                     <li class="page-item active">
-                                                        <a class="page-link" href="order-list.html">1</a>
+                                                        <a class="page-link" href="order-list_no5.html">1</a>
                                                     </li>
                                                     <li class="page-item">
-                                                        <a class="page-link" href="order-list.html">2</a>
+                                                        <a class="page-link" href="order-list_no5.html">2</a>
                                                     </li>
                                                     <li class="page-item">
-                                                        <a class="page-link" href="order-list.html">3</a>
+                                                        <a class="page-link" href="order-list_no5.html">3</a>
                                                     </li>
                                                     <li class="page-item">
                                                         <a class="page-link" href="javascript:void(0)">
@@ -714,6 +810,35 @@
     </div>
     <!-- Delete Modal Box End -->
 
+    <!-- Modal chỉnh sửa trạng thái -->
+    <div class="modal fade" id="editStatusModal" tabindex="-1" aria-labelledby="editStatusModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editStatusModalLabel">Chỉnh sửa trạng thái</h5>
+                    <!-- Nút đóng modal -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="orderStatus">Trạng thái</label>
+                        <select id="orderStatus" class="form-select">
+                            <option value="Hoàn thành">Hoàn thành</option>
+                            <option value="Đang xử lý">Đang xử lý</option>
+                            <option value="Chưa xử lý">Chưa xử lý</option>
+                            <option value="Đã hủy">Đã hủy</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--modal end-->
+
     <!-- Filter modal box start -->
     <div class="modal fade theme-modal" id="Filter" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
@@ -736,9 +861,16 @@
 
                                 <form>
                                 <div class="form-check">
-                                    <a href="./order-list_no2.html" class="btn btn-solid">Đơn hàng chưa xử lý</a>
+                                    <a href="./order-list_no2.html" class="btn btn-solid">Đơn hàng đang xử lý</a>
                                 </div>
                                 </form>
+
+                                <form>
+                                    <div class="form-check">
+                                        <a href="./order-list_no6.html" class="btn btn-solid">Đơn hàng chưa xử lý</a>
+                                    </div>
+                                </form>
+
                                 <form>
                                     <div class="form-check">
                                         <a href="order-list_no3.html" class="btn btn-solid">Đơn hàng đã huỷ</a>
@@ -801,6 +933,22 @@
     <!-- Theme js -->
     <script src="assets/js/script.js"></script>
 </body>
+
+<script>
+    function saveStatus() {
+        // Lấy giá trị trạng thái từ dropdown
+        const newStatus = document.getElementById('orderStatus').value;
+        
+        // Cập nhật trạng thái trong bảng (giả sử chỉnh sửa hàng đầu tiên)
+        const statusText = document.querySelector('.status-text');
+        statusText.textContent = newStatus;
+
+        // Đóng modal
+        const modal = document.getElementById('editStatusModal');
+        const modalInstance = bootstrap.Modal.getInstance(modal);
+        modalInstance.hide();
+    }
+</script>
 
 
 <!-- Mirrored from themes.pixelstrap.com/fastkart/back-end/order-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Oct 2024 14:10:07 GMT -->
