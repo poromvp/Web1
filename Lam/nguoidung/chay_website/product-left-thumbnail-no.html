@@ -856,11 +856,8 @@
                                 </div>
 
                                 <div class="product-contain">
-                                    <p>Danh mục: Chế biến sẵn
-                                       <br>Phân loại: Bánh Quy & Đồ ăn vặt
-                                    </p>
+                                    <p>Danh mục: Chế biến sẵn  </p>
                                 </div>
-
                                 <div class="note-box product-package">
                                     <div class="cart_qty qty-box product-qty">
                                         <div class="input-group">
@@ -876,7 +873,7 @@
                                         </div>
                                     </div>
 
-                                    <button onclick="location.href = 'cart.html';"
+                                    <button onclick="confirmm()"
                                         class="btn btn-md bg-dark cart-button text-white w-100">Thêm vào giỏ hàng</button>
                                 </div>
 
@@ -1598,7 +1595,7 @@
                                         <h5 class="price"><span class="theme-color">20.000 VND</span> <del>22.000 VND</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
-                                            <button class="btn btn-add-cart addcart-button">Thêm
+                                            <button onclick="confirmm()" class="btn btn-add-cart addcart-button">Thêm
                                                 <span class="add-icon bg-light-gray">
                                                     <i class="fa-solid fa-plus"></i>
                                                 </span>
@@ -1684,7 +1681,7 @@
                                         <h5 class="price"><span class="theme-color">20.000 VND</span> <del>22.000 VND</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
-                                            <button class="btn btn-add-cart addcart-button">Thêm
+                                            <button onclick="confirmm()" class="btn btn-add-cart addcart-button">Thêm
                                                 <span class="add-icon bg-light-gray">
                                                     <i class="fa-solid fa-plus"></i>
                                                 </span>
@@ -1771,7 +1768,7 @@
                                         <h5 class="price"><span class="theme-color">20.000 VND</span> <del>22.000 VND</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
-                                            <button class="btn btn-add-cart addcart-button">Thêm
+                                            <button onclick="confirmm()" class="btn btn-add-cart addcart-button">Thêm
                                                 <span class="add-icon bg-light-gray">
                                                     <i class="fa-solid fa-plus"></i>
                                                 </span>
@@ -1858,7 +1855,7 @@
                                         <h5 class="price"><span class="theme-color">21.000 VND</span> <del>23.000 VND</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
-                                            <button class="btn btn-add-cart addcart-button">Thêm
+                                            <button onclick="confirmm()" class="btn btn-add-cart addcart-button">Thêm
                                                 <span class="add-icon bg-light-gray">
                                                     <i class="fa-solid fa-plus"></i>
                                                 </span>
@@ -1945,7 +1942,7 @@
                                         <h5 class="price"><span class="theme-color">21.000 VND</span> <del>23.000 VND</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
-                                            <button class="btn btn-add-cart addcart-button">Thêm
+                                            <button onclick="confirmm()" class="btn btn-add-cart addcart-button">Thêm
                                                 <span class="add-icon bg-light-gray">
                                                     <i class="fa-solid fa-plus"></i>
                                                 </span>
@@ -2034,7 +2031,7 @@
                                         <h5 class="price"><span class="theme-color">27.000 VND</span> <del>32.500 VND</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
-                                            <button class="btn btn-add-cart addcart-button">Thêm
+                                            <button onclick="confirmm()" class="btn btn-add-cart addcart-button">Thêm
                                                 <span class="add-icon bg-light-gray">
                                                     <i class="fa-solid fa-plus"></i>
                                                 </span>
@@ -2122,7 +2119,7 @@
                                         <h5 class="price"><span class="theme-color">20.000 VND</span> <del>22.000 VND</del>
                                         </h5>
                                         <div class="add-to-cart-box bg-white">
-                                            <button class="btn btn-add-cart addcart-button">Thêm
+                                            <button onclick="confirmm()" class="btn btn-add-cart addcart-button">Thêm
                                                 <span class="add-icon bg-light-gray">
                                                     <i class="fa-solid fa-plus"></i>
                                                 </span>
@@ -2862,6 +2859,12 @@
                 window.location.href = "login.html";
             }
         });
+    </script> 
+
+    <script>
+        function confirmm(){
+            alert('Sản phẩm đã thêm vào giỏ hàng !!!');
+        }
     </script>
 
 </body>
