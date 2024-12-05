@@ -1050,7 +1050,7 @@
 
 
     <!-- View user modal start -->
-    <div class="modal fade theme-modal" id="viewmodal" tabindex="-1">
+    <div class="modal fade theme-modal" id="viewmodal" tabindex="-1" style="width: 100%;">
         <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1063,11 +1063,11 @@
                     <div class="table-image">
                         <div style="display: inline-flex;">
                             <img src="assets/images/users/1.jpg" class="img-fluid"
-                            alt="" style="border-radius: 10px; width: 800px;">
-                            <h3 style="margin-left: 20px;">
-                                <strong>Tên: <br>Everett C. Green <br> <br>
-                                SĐT: <br>+ 802-370-2430 <br><br>
-                                Email: EverettCGreen@rhyta.com <br></strong>
+                            alt="" style="border-radius: 10px; width: 100%;">
+                            <h3 style="margin-left: 20px;" class="content" contenteditable="false">
+                                <strong>Tên: <button class="editButton">Edit</button><br>Everett C. Green <br> <br>
+                                SĐT: <button class="editButton">Edit</button><br>+ 802-370-2430 <br><br>
+                                Email: <button class="editButton">Edit</button>EverettCGreen@rhyta.com <br></strong>
                                 <div>
                                     <img src="https://themes.pixelstrap.com/fastkart/assets/images/svg/order.svg" alt="" style="width: 40px; margin-top: 20px;">
                                     <h5>Tổng Đơn Hàng <br>27 </h5>
@@ -1087,6 +1087,23 @@
             </div>
         </div>
     </div>
+    <script>
+        document.querySelectorAll(".editButton").forEach((button, index) => {
+            const content = document.querySelectorAll(".content")[index];
+            
+            button.addEventListener("click", () => {
+                content.contentEditable = "true";
+                content.focus();
+            });
+    
+            content.addEventListener("keydown", (event) => {
+                if (event.key === "Enter") {
+                    event.preventDefault();
+                    content.contentEditable = "false";
+                }
+            });
+        });
+    </script>
     <!-- View user modal end -->
     <!-- latest js -->
     <script src="assets/js/jquery-3.6.0.min.js"></script>
