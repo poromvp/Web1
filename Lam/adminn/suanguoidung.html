@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+<!-- Mirrored from themes.pixelstrap.com/fastkart/back-end/add-new-user.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Oct 2024 14:10:12 GMT -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Fastkart admin is super flexible, powerful, clean &amp; modern responsive bootstrap 5 admin template with unlimited possibilities.">
+    <meta name="keywords"
+        content="admin template, Fastkart admin template, dashboard template, flat admin template, responsive admin template, web app">
+    <meta name="author" content="pixelstrap">
+    <link rel="icon" href="assets/images/logo-tab-bar.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/logo-tab-bar.png" type="image/x-icon">
+    <title>P-Mart - Sửa Người Dùng</title>
+
+    <!-- Google font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Fontawesome css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/font-awesome.css">
+
+    <!-- Linear Icon css -->
+    <link rel="stylesheet" href="assets/css/linearicon.css">
+
+    <!-- remixicon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/remixicon.css">
+
+    <!-- Themify icon-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/themify.css">
+
+    <!--Dropzon css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/dropzone.css">
+
+    <!-- Feather icon css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/feather-icon.css">
+
+    <!-- Plugins css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/chartist.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/date-picker.css">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors/bootstrap.css">
+
+    <!-- App css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- tap on top start -->
+    <div class="tap-top">
+        <span class="lnr lnr-chevron-up"></span>
+    </div>
+    <!-- tap on tap end -->
+
+    <!-- page-wrapper Start -->
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="header-wrapper m-0">
+                <div class="header-logo-wrapper p-0">
+                    <div class="logo-wrapper">
+                        <a href="index.html">
+                            <img class="img-fluid main-logo" src="assets/images/logo/1.png" alt="logo">
+                            <img class="img-fluid white-logo" src="assets/images/logo/1-white.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="toggle-sidebar">
+                        <i class="status_toggle middle sidebar-toggle" data-feather="align-center"></i>
+                        <a href="index.html">
+                            <img src="assets/images/logo/1.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                
+                <div class="nav-right col-6 pull-right right-header p-0">
+                    <ul class="nav-menus">
+                        <li>
+                            <span class="header-search">
+                                <i class="ri-search-line"></i>
+                            </span>
+                        </li>
+                        
+
+                        <!--<li>
+                            <div class="mode">
+                                <i class="ri-moon-line"></i>
+                            </div>
+                        </li>-->
+                        <li class="profile-nav onhover-dropdown pe-0 me-0">
+                            <div class="media profile-media">
+                                <img class="user-profile rounded-circle" src="assets/images/users/4.jpg" alt="">
+                                <div class="user-name-hide media-body">
+                                    <span>Emay Walter</span>
+                                    <p class="mb-0 font-roboto">Quản trị viên<i class="middle ri-arrow-down-s-line"></i></p>
+                                </div>
+                            </div>
+                            <ul class="profile-dropdown onhover-show-div">
+                                <li>
+                                    <a href="all-users.html">
+                                        <i data-feather="users"></i>
+                                        <span>Người dùng</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="order-list.html">
+                                        <i data-feather="archive"></i>
+                                        <span>Đặt hàng</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="profile-setting.html">
+                                        <i data-feather="settings"></i>
+                                        <span>Cài đặt</span>
+                                    </a>
+                                </li>
+                                <!-- <li>
+                                    <a href="support-ticket.html">
+                                        <i data-feather="phone"></i>
+                                        <span>Phiếu hỗ trợ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                        href="javascript:void(0)">
+                                        <i data-feather="log-out"></i>
+                                        <span>Đăng xuất</span>
+                                    </a>
+                                </li> -->
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- Page Body Start -->
+        <div class="page-body-wrapper">
+            <!-- Thanh điều hướng Ends-->
+            <div class="sidebar-wrapper">
+                <div id="sidebarEffect"></div>
+                <div>
+                    <div class="logo-wrapper logo-wrapper-center">
+                        <a href="index.html" style="display: inline-block; width: 180px; height: 170px; margin-top: -45px;">
+                            <img class="img-fluid for-white" src="assets/images/logo/p-mart-logo-full-white - Copy.png" alt="logo" style="width: 100%; height: 100%;">
+                        </a>
+                        
+                        <div class="back-btn">
+                            <i class="fa fa-angle-left"></i>
+                        </div>
+                        
+                    </div>
+                    <div class="logo-icon-wrapper">
+                        <a href="index.html">
+                            <img class="img-fluid main-logo main-white" src="assets/images/logo/p-mart-logo.png" alt="logo">
+                            <img class="img-fluid main-logo main-dark" src="assets/images/logo/logo-white.png"
+                                alt="logo">
+                        </a>
+                    </div>
+                    <nav class="sidebar-main">
+                        <div class="left-arrow" id="left-arrow">
+                            <i data-feather="arrow-left"></i>
+                        </div>
+
+                        <div id="sidebar-menu">
+                            <ul class="sidebar-links" id="simple-bar">
+                            
+                                <li class="back-btn"></li>
+
+                                <li class="sidebar-list" style="position: relative; top: 50px;">
+                                    <a class="sidebar-link sidebar-title link-nav" href="index.html">
+                                        <i class="ri-home-line"></i>
+                                        <span>THỐNG KÊ</span>
+                                    </a>
+                                </li>
+
+                                 <li class="sidebar-list" style="position: relative; top: 50px;">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-store-3-line"></i>
+                                        <span>Sản phẩm</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="products.html">Danh sách sản phẩm</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="add-new-product.html">Thêm sản phẩm mới</a>
+                                        </li>
+
+                                          <!--
+                                        <li>
+                                            <a href="category.html">Danh sách danh mục</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="add-new-category.html">Thêm danh mục mới</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="attributes.html">Danh sách thuộc tính</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="add-new-attributes.html">Thêm thuộc tính mới</a>
+                                        </li>
+                                        -->
+
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list" style="position: relative; top: 50px;">
+                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-user-3-line"></i>
+                                        <span>Người dùng</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="all-users.html">Tất cả người dùng</a>
+                                        </li>
+                                        <li>
+                                            <a href="add-new-user.html">Thêm người dùng mới</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!-- <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-user-3-line"></i>
+                                        <span>Vai trò</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="role.html">Danh sách vai trò</a>
+                                        </li>
+                                        <li>
+                                            <a href="create-role.html">Thêm vai trò</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="media.html">
+                                        <i class="ri-Giá tiền-tag-3-line"></i>
+                                        <span>Phương tiện</span>
+                                    </a>
+                                </li> -->
+
+                                <li class="sidebar-list" style="position: relative; top: 50px;">
+                                    <a class="sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-archive-line"></i>
+                                        <span>Quản lí đơn đặt hàng</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="order-list.html">Danh sách đặt hàng</a>
+                                        </li>
+                                        <li>
+                                            <a href="order-tracking.html">Theo dõi đơn hàng</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <!--
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-focus-3-line"></i>
+                                        <span>Localization</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="translation.html">Translation</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="currency-rates.html">Currency Rates</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                
+
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-Giá tiền-tag-3-line"></i>
+                                        <span>Phiếu Giảm Giá</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="coupon-list.html">Danh sách phiếu giảm piá</a>
+                                        </li>
+
+                                        <li>
+                                            <a href="create-coupon.html">Tại phiếu giảm giá</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="taxes.html">
+                                        <i class="ri-Giá tiền-tag-3-line"></i>
+                                        <span>Thuế</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="product-review.html">
+                                        <i class="ri-star-line"></i>
+                                        <span>Đánh Giá Sản Phẩm</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="support-ticket.html">
+                                        <i class="ri-phone-line"></i>
+                                        <span>Phiếu hỗ trợ</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="linear-icon-link sidebar-link sidebar-title" href="javascript:void(0)">
+                                        <i class="ri-settings-line"></i>
+                                        <span>Cài Đặt</span>
+                                    </a>
+                                    <ul class="sidebar-submenu">
+                                        <li>
+                                            <a href="profile-setting.html">Cài đặt hồ sơ</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="reports.html">
+                                        <i class="ri-file-chart-line"></i>
+                                        <span>Báo Cáo</span>
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-list">
+                                    <a class="sidebar-link sidebar-title link-nav" href="list-page.html">
+                                        <i class="ri-list-check"></i>
+                                        <span>Trang Danh Sách</span>
+                                    </a>
+                                </li>-->
+                            </ul>
+                        </div>
+
+                        <div class="right-arrow" id="right-arrow">
+                            <i data-feather="arrow-right"></i>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Thanh điều hướng Ends-->
+
+            <!-- Page Sidebar Start -->
+            <div class="page-body">
+                <!-- New User start -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-sm-8 m-auto">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="title-header option-title">
+                                                <h5>Sửa thông tin người dùng</h5>
+                                            </div>
+                                            
+                
+                                            <div class="tab-content" id="pills-tabContent">
+                                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
+                                                    <form class="theme-form theme-form-2 mega-form">
+                                                        <div class="card-header-1">
+                                                            <h5>Thông Tin Người Dùng</h5>
+                                                        </div>
+                
+                                                        <div class="row">
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label class="form-label-title col-lg-2 col-md-3 mb-0">Họ Tên</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="text" value="Everett C. Green">
+                                                                </div>
+                                                            </div>
+                
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label class="col-lg-2 col-md-3 col-form-label form-label-title">Địa chỉ Email</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="email" value="EverettCGreen@rhyta.com">
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label class="col-lg-2 col-md-3 col-form-label form-label-title">Số Điện Thoại</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="email" value="+ 802 - 370 - 2430">
+                                                                </div>
+                                                            </div>
+                
+                                                            <div class="mb-4 row align-items-center">
+                                                                <label class="col-lg-2 col-md-3 col-form-label form-label-title">Mật khẩu</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="password" value="aaaaaaaaaaaaaaa">
+                                                                </div>
+                                                            </div>
+                
+                                                            <div class="row align-items-center">
+                                                                <label class="col-lg-2 col-md-3 col-form-label form-label-title">Xác nhận mật khẩu</label>
+                                                                <div class="col-md-9 col-lg-10">
+                                                                    <input class="form-control" type="password" value="aaaaaaaaaaaaaaa">
+                                                                </div>
+                                                            </div>
+
+                                                            <br>
+
+                                                            <div class="card">
+                                                                <div class="card-body">
+                                                                    <div class="card-header-2">
+                                                                        <h5>Ảnh đại diện</h5>
+                                                                    </div>
+                        
+                                                                    <form class="theme-form theme-form-2 mega-form">
+                                                                        <div class="mb-4 row align-items-center">
+                                                                            <label
+                                                                            class="col-sm-3 col-form-label form-label-title">Hình ảnh</label>
+                                                                            <div class="col-sm-9">
+                                                                                
+                                                                                <input class="form-control form-choose" type="file"
+                                                                                id="formFile" multiple>
+                                                                            </div>
+                                                                        </div>
+                                                                        <img src="assets/images/users/1.jpg" style="width: 30%; border-radius: 20px; margin-bottom: 10px; margin-left: 200px;" id="previewImage">
+                                                                    </form>
+                                                                </div>
+                                                            </div>
+
+                                                            <button style="width: 100%;" class="align-items-center btn btn-theme d-flex" data-bs-dismiss="modal" data-bs-target="#success" data-bs-toggle="modal">
+                                                                <i data-feather="user-check"></i>Cập nhật
+                                                            </button>
+                                                            
+                                                        </div>
+
+                                                    </form>
+                                                </div>
+                
+                                                <div class="tab-pane fade" id="pills-profile" role="tabpanel">
+                                                    <div class="card-header-1">
+                                                        <h5>Quyền Liên Quan Đến Sản Phẩm</h5>
+                                                    </div>
+                                                    <div class="mb-4 row align-items-center">
+                                                        <label class="col-md-2 mb-0">Thêm Sản Phẩm</label>
+                                                        <div class="col-md-9">
+                                                            <form class="radio-section">
+                                                                <label>
+                                                                    <input type="radio" name="opinion" checked>
+                                                                    <i></i>
+                                                                    <span>Cho phép</span>
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="opinion" />
+                                                                    <i></i>
+                                                                    <span>Từ chối</span>
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="mb-4 row align-items-center">
+                                                        <label class="col-md-2 mb-0">Cập Nhật Sản Phẩm</label>
+                                                        <div class="col-md-9">
+                                                            <form class="radio-section">
+                                                                <label>
+                                                                    <input type="radio" name="opinion" />
+                                                                    <i></i>
+                                                                    <span>Cho phép</span>
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="opinion" checked>
+                                                                    <i></i>
+                                                                    <span>Từ chối</span>
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="mb-4 row align-items-center">
+                                                        <label class="col-md-2 mb-0">Xóa Sản Phẩm</label>
+                                                        <div class="col-md-9">
+                                                            <form class="radio-section">
+                                                                <label>
+                                                                    <input type="radio" name="opinion" checked>
+                                                                    <i></i>
+                                                                    <span>Cho phép</span>
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="opinion" />
+                                                                    <i></i>
+                                                                    <span>Từ chối</span>
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="mb-4 row align-items-center">
+                                                        <label class="col-md-2 mb-0">Áp Dụng Giảm Giá</label>
+                                                        <div class="col-md-9">
+                                                            <form class="radio-section">
+                                                                <label>
+                                                                    <input type="radio" name="opinion" />
+                                                                    <i></i>
+                                                                    <span>Cho phép</span>
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="opinion" checked>
+                                                                    <i></i>
+                                                                    <span>Từ chối</span>
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="card-header-1">
+                                                        <h5>Quyền Liên Quan Đến Danh Mục</h5>
+                                                    </div>
+                                                    <div class="mb-4 row align-items-center">
+                                                        <label class="col-md-2 mb-0">Thêm Danh Mục</label>
+                                                        <div class="col-md-9">
+                                                            <form class="radio-section">
+                                                                <label>
+                                                                    <input type="radio" name="opinion" checked>
+                                                                    <i></i>
+                                                                    <span>Cho phép</span>
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="opinion" />
+                                                                    <i></i>
+                                                                    <span>Từ chối</span>
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="mb-4 row align-items-center">
+                                                        <label class="col-md-2 mb-0">Cập Nhật Danh Mục</label>
+                                                        <div class="col-md-9">
+                                                            <form class="radio-section">
+                                                                <label>
+                                                                    <input type="radio" name="opinion" />
+                                                                    <i></i>
+                                                                    <span>Cho phép</span>
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="opinion" checked>
+                                                                    <i></i>
+                                                                    <span>Từ chối</span>
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                
+                                                    <div class="mb-4 row align-items-center">
+                                                        <label class="col-md-2 mb-0">Xóa Danh Mục</label>
+                                                        <div class="col-md-9">
+                                                            <form class="radio-section">
+                                                                <label>
+                                                                    <input type="radio" name="opinion" />
+                                                                    <i></i>
+                                                                    <span>Cho phép</span>
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="opinion" checked>
+                                                                    <i></i>
+                                                                    <span>Từ chối</span>
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                
+                                                    <!-- <div class="mb-4 row align-items-center">
+                                                        <label class="col-md-2 mb-0">Áp Dụng Giảm Giá</label>
+                                                        <div class="col-md-9">
+                                                            <form class="radio-section">
+                                                                <label>
+                                                                    <input type="radio" name="opinion" checked>
+                                                                    <i></i>
+                                                                    <span>Cho phép</span>
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="opinion" />
+                                                                    <i></i>
+                                                                    <span>Từ chối</span>
+                                                                </label>
+                                                            </form>
+                                                        </div>
+                                                    </div> -->
+                                                    <button style="width: 100%;" class="align-items-center btn btn-theme d-flex" data-bs-dismiss="modal" data-bs-target="#success" data-bs-toggle="modal">
+                                                        <i data-feather="user-check"></i>Xác nhận thêm
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- New User End -->
+
+                
+            </div>
+            <!-- Page Sidebar End -->
+        </div>
+    </div>
+    <!-- page-wrapper End -->
+
+    <!-- Modal Start -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h5 class="modal-title" id="staticBackdropLabel">Đăng Xuất</h5>
+                    <p>Bạn có chắc chắn muốn đăng xuất không?</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Đóng"></button>
+                    <div class="button-box">
+                        <button type="button" class="btn btn--no" data-bs-dismiss="modal">Không</button>
+                        <button type="button" class="btn btn--yes btn-primary">Có</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal End -->
+
+    <!--Thêm người dùng thành công-->
+    <div class="modal fade theme-modal remove-coupon" id="success" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModalLabel12">Xong!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="remove-box text-center">
+                        <div class="wrapper">
+                            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none" />
+                                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                            </svg>
+                        </div>
+                        <h4 class="text-content">Đã cập nhật</h4>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- latest js -->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap js -->
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- feather icon js -->
+    <script src="assets/js/icons/feather-icon/feather.min.js"></script>
+    <script src="assets/js/icons/feather-icon/feather-icon.js"></script>
+
+    <!-- scrollbar simplebar js -->
+    <script src="assets/js/scrollbar/simplebar.js"></script>
+    <script src="assets/js/scrollbar/custom.js"></script>
+
+    <!-- customizer js 
+    <script src="assets/js/customizer.js"></script> -->
+
+    <!-- Sidebar js-->
+    <script src="assets/js/config.js"></script>
+
+    <script src="assets/js/sidebar-menu.js"></script>
+    <!-- Plugins JS 
+    <script src="assets/js/notify/bootstrap-notify.min.js"></script>
+    <script src="assets/js/notify/index.js"></script> -->
+
+    <!--Dropzon js -->
+    <script src="assets/js/dropzone/dropzone.js"></script>
+    <script src="assets/js/dropzone/dropzone-script.js"></script>
+
+    <!-- sidebar effect -->
+    <script src="assets/js/sidebareffect.js"></script>
+
+    <!-- Theme js -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+
+<!-- Mirrored from themes.pixelstrap.com/fastkart/back-end/add-new-user.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 13 Oct 2024 14:10:12 GMT -->
+</html>
